@@ -60,6 +60,9 @@ public struct AppBeautyOptions: Equatable {
         return c
     }
 
+    /// Whether any face-shape item is on.
+    var reshapes: Bool { enabled && values.contains { $0.value != 0 && $0.key.isReshape } }
+
     /// True when these options change nothing.
     public var isNeutral: Bool {
         (!enabled || values.values.allSatisfy { $0 == 0 }) &&

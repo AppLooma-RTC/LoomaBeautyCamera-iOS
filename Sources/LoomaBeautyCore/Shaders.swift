@@ -73,6 +73,38 @@ fragment float4 fCopyYuv(VOut in [[stage_in]], texture2d<float> yTex [[texture(0
     return float4(clamp(rgb, 0.0, 1.0), 1.0);
 }
 
+// Face reshape as a list of local warps around landmarks, applied in order.
+// Each op: a = (centre x, centre y in buffer uv, radius in pixels, type),
+// b = (offset x, offset y in uv, scale, 0). Type 0 moves the content by the
+// offset (strongest at the centre); type 1 magnifies (scale > 0) or shrinks it.
+struct WarpU {
+    float4 a[32];
+    float4 b[32];
+    float4 p;         // pixel size (xy), op count, unused
+};
+
+fragment float4 fWarp(VOut in [[stage_in]], texture2d<float> tex [[texture(0)]], constant WarpU &u [[buffer(0)]]) {
+    constexpr sampler s(filter::linear, address::clamp_to_edge);
+    float2 uv = in.uv;
+    int n = int(u.p.z);
+    for (int i = 0; i < 32; i++) {
+        if (i >= n) break;
+        float4 a = u.a[i];
+        float4 b = u.b[i];
+        float r = length((uv - a.xy) * u.p.xy);
+        if (r < a.z) {
+            float t = r / a.z;
+            if (a.w < 0.5) {
+                float w = 1.0 - t;
+                uv -= b.xy * w * w;
+            } else {
+                uv = a.xy + (uv - a.xy) * (1.0 - b.z * (1.0 - t * t));
+            }
+        }
+    }
+    return float4(tex.sample(s, uv).rgb, 1.0);
+}
+
 // Downsample for the guided filter: colour in rgb, squared luma in a.
 fragment float4 fDown(VOut in [[stage_in]], texture2d<float> tex [[texture(0)]], constant float4 &p [[buffer(0)]]) {
     constexpr sampler s(filter::linear, address::clamp_to_edge);

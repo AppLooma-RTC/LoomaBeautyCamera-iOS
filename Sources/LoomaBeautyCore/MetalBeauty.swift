@@ -66,6 +66,8 @@ final class MetalBeauty {
 
     // Render-thread state.
     private var src: MTLTexture?
+    private var warped: MTLTexture?
+    private var warpGain: Float = 1
     private var half1: MTLTexture?
     private var half2: MTLTexture?
     private var mask1: MTLTexture?
@@ -169,8 +171,14 @@ final class MetalBeauty {
             if regions == nil { regionsValid = false }
             if eyeArt == nil { eyeArtValid = false }
         }
-        // Face-shape items are not drawn on iOS yet: no warp pass.
-        let s = s0
+        // Reshape: warp the camera picture before everything else reads it.
+        var s = s0
+        if let an = face?.anchors, o.reshapes {
+            let wt = target(warped, width, height, .rgba8Unorm); warped = wt
+            if drawWarp(cb, s0, wt, an, o, motion: tracker?.motion ?? 0) { s = wt }
+        } else {
+            warpGain = 1
+        }
 
         let needMean = o.smooth > 0 || o.sharpen > 0 || o[.lowLight] > 0 || o[.blemish] > 0 || o[.smileLines] > 0 || o[.darkCircles] > 0
         let div = Swift.min(width, height) >= 900 ? 4 : 2
@@ -347,6 +355,144 @@ final class MetalBeauty {
             if t > 0 { out[i * 2] += ux * t * 0.4; out[i * 2 + 1] += uy * t * 0.4 }
         }
         return out
+    }
+
+    // MARK: Reshape
+
+    /// Draws `src` through the reshape warps into `dst`; false when there is nothing to warp.
+    private func drawWarp(_ cb: MTLCommandBuffer, _ src: MTLTexture, _ dst: MTLTexture, _ a: FaceTracker.Anchors,
+                          _ o: AppBeautyOptions, motion: Float) -> Bool {
+        // Ease reshapes off while the head moves fast: the landmarks trail the
+        // picture by a detection or two, and a warp in the wrong place wobbles.
+        let gate = Swift.min(Swift.max(1 - (motion - 0.15) / 0.5, 0.25), 1)
+        warpGain += (gate - warpGain) * 0.3
+        let eff = warpGain < 0.99 ? o.scaled(warpGain) : o
+        var opA = [SIMD4<Float>](repeating: .zero, count: 32)
+        var opB = [SIMD4<Float>](repeating: .zero, count: 32)
+        let n = buildOps(a, eff, Float(src.width), &opA, &opB)
+        if n == 0 { return false }
+        guard let p = pipeline("vQuad", "fWarp", dst.pixelFormat), let enc = encoder(cb, dst) else { return false }
+        // Flat float4 layout: 32 a, 32 b, then (pixel size, op count) - `WarpU` in the shader.
+        var flat = opA + opB + [SIMD4(Float(src.width), Float(src.height), Float(n), 0)]
+        enc.setRenderPipelineState(p)
+        enc.setFragmentTexture(src, index: 0)
+        enc.setFragmentBytes(&flat, length: MemoryLayout<SIMD4<Float>>.stride * flat.count, index: 0)
+        enc.drawPrimitives(type: .triangleStrip, vertexStart: 0, vertexCount: 4)
+        enc.endEncoding()
+        return true
+    }
+
+    /// The reshape as warp ops. Geometry is worked out on the upright image in
+    /// pixels (eye distance as the unit, "across" along the eyes, "down" down
+    /// the face) and mapped to the buffer at the end. Same ops and strengths
+    /// as the other platforms.
+    private func buildOps(_ a: FaceTracker.Anchors, _ o: AppBeautyOptions, _ W: Float,
+                          _ opA: inout [SIMD4<Float>], _ opB: inout [SIMD4<Float>]) -> Int {
+        let UW = a.uprightW, UH = a.uprightH
+        let lx = a.lx * UW, ly = a.ly * UH, rx = a.rx * UW, ry = a.ry * UH
+        let ed = hypotf(rx - lx, ry - ly)
+        if ed < 2 { return 0 }
+        let ux = (rx - lx) / ed, uy = (ry - ly) / ed       // across, towards the right eye
+        let vx = -uy, vy = ux                              // down the face
+        // Buffer pixels per upright pixel: the snapshot is a quarter of the frame.
+        let scale = W / a.bufW
+        var n = 0
+        func toUv(_ x: Float, _ y: Float) -> SIMD2<Float> {
+            let b = FaceTracker.toBuffer(x, y, a.rotation, a.bufW, a.bufH)
+            return SIMD2(b.x / a.bufW, b.y / a.bufH)
+        }
+        func op(_ px: Float, _ py: Float, _ dx: Float, _ dy: Float, _ radius: Float, _ type: Int, _ amount: Float) {
+            if n >= 32 { return }
+            let c = toUv(px, py), e = toUv(px + dx, py + dy)
+            opA[n] = SIMD4(c.x, c.y, radius * ed * scale, Float(type))
+            opB[n] = SIMD4(e.x - c.x, e.y - c.y, amount, 0)
+            n += 1
+        }
+        /// Moves the content at `pt` by (across, down) eye-distances.
+        func move(_ pt: SIMD2<Float>?, _ across: Float, _ down: Float, _ radius: Float) {
+            guard let pt, across != 0 || down != 0 else { return }
+            op(pt.x, pt.y, (ux * across + vx * down) * ed, (uy * across + vy * down) * ed, radius, 0, 0)
+        }
+        /// Moves a left/right pair inwards (towards the face's middle) by `k` eye-distances.
+        func pair(_ l: SIMD2<Float>?, _ r: SIMD2<Float>?, _ k: Float, _ down: Float, _ radius: Float) {
+            if k == 0 && down == 0 { return }
+            move(l, k, down, radius); move(r, -k, down, radius)
+        }
+        func mid(_ p: SIMD2<Float>?, _ q: SIMD2<Float>?) -> SIMD2<Float>? {
+            guard let p, let q else { return nil }
+            return (p + q) / 2
+        }
+        func scaleAt(_ pt: SIMD2<Float>?, _ amount: Float, _ radius: Float) {
+            if let pt, amount != 0 { op(pt.x, pt.y, 0, 0, radius, 1, amount) }
+        }
+        let across = SIMD2<Float>(ux, uy)
+        let jawL = SIMD2<Float>(a.jawLx * UW, a.jawLy * UH), jawR = SIMD2<Float>(a.jawRx * UW, a.jawRy * UH)
+
+        // Face
+        pair(jawL, jawR, 0.32 * o[.slimFace], 0, 1.1)
+        pair(a.px("lowL"), a.px("lowR"), 0.28 * o[.vFace], -0.05 * o[.vFace], 0.9)
+        pair(a.px("cheekL"), a.px("cheekR"), 0.16 * o[.cheekbone], 0, 0.8)
+        move(a.px("chin"), 0, 0.22 * o[.chin], 0.9)
+        pair(a.px("templeL"), a.px("templeR"), -0.12 * o[.temple], 0, 0.7)
+        move(a.px("top"), 0, -0.28 * o[.forehead], 1.4)
+        let faceCentre = SIMD2<Float>((lx + rx) / 2 + vx * ed * 0.6, (ly + ry) / 2 + vy * ed * 0.6)
+        scaleAt(faceCentre, -0.12 * o[.faceShrink], 2.4)
+        if let chinPt = a.px("chin"), o[.chinShape] != 0 {
+            let k = o[.chinShape]
+            move(chinPt - across * (ed * 0.35), 0.1 * k, 0, 0.5)
+            move(chinPt + across * (ed * 0.35), -0.1 * k, 0, 0.5)
+            move(chinPt, 0, 0.06 * k, 0.5)
+        }
+        move(a.px("chin"), 0, -0.3 * o[.shortFace], 1.3)
+        pair(jawL, jawR, 0.2 * o[.jaw], 0, 0.8)
+
+        // Eyes
+        let eyeL = SIMD2<Float>(lx, ly), eyeR = SIMD2<Float>(rx, ry)
+        let big = o[.bigEyes]
+        if big != 0 { op(lx, ly, 0, 0, 0.45, 1, 0.3 * big); op(rx, ry, 0, 0, 0.45, 1, 0.3 * big) }
+        let pu = o[.pupils]
+        if pu != 0 { op(lx, ly, 0, 0, 0.12, 1, 0.35 * pu); op(rx, ry, 0, 0, 0.12, 1, 0.35 * pu) }
+        // Brow trim: pull the brow's top edge down a little so it reads slimmer.
+        let bt = o[.browTrim]
+        if bt != 0 { move(a.px("browL"), 0, 0.025 * bt, 0.22); move(a.px("browR"), 0, 0.025 * bt, 0.22) }
+        let lid = o[.eyelid]
+        if lid != 0 { move(a.px("eyeLTop"), 0, -0.035 * lid, 0.22); move(a.px("eyeRTop"), 0, -0.035 * lid, 0.22) }
+        let bh = o[.browHeight]
+        if bh != 0 { move(a.px("browL"), 0, -0.08 * bh, 0.45); move(a.px("browR"), 0, -0.08 * bh, 0.45) }
+        let eh = o[.eyeHeight]
+        if eh != 0 { move(eyeL, 0, -0.07 * eh, 0.55); move(eyeR, 0, -0.07 * eh, 0.55) }
+        let tilt = o[.eyeAngle]
+        if tilt != 0 { move(a.px("eyeLOuter"), 0, -0.06 * tilt, 0.32); move(a.px("eyeROuter"), 0, -0.06 * tilt, 0.32) }
+        let bs = o[.browShape]
+        if bs != 0 { move(a.px("browLOuter"), 0, -0.07 * bs, 0.3); move(a.px("browROuter"), 0, -0.07 * bs, 0.3) }
+        pair(eyeL, eyeR, -0.07 * o[.eyeDistance], 0, 0.5)
+
+        // Nose
+        scaleAt(a.px("noseBottom"), -0.25 * o[.noseTip], 0.4)
+        move(a.px("mouthC"), 0, -0.08 * o[.philtrum], 0.7)
+        pair(a.px("wingL"), a.px("wingR"), 0.1 * o[.slimNose], 0, 0.38)
+        if let bridgeMid = mid(a.px("noseTop"), a.px("noseTip")), o[.bridge] != 0 {
+            let k = o[.bridge]
+            move(bridgeMid - across * (ed * 0.14), 0.05 * k, 0, 0.25)
+            move(bridgeMid + across * (ed * 0.14), -0.05 * k, 0, 0.25)
+        }
+        if let top = a.px("noseTop"), o[.nasalBridge] != 0 {
+            let k = o[.nasalBridge]
+            move(top - across * (ed * 0.13), 0.045 * k, 0, 0.22)
+            move(top + across * (ed * 0.13), -0.045 * k, 0, 0.22)
+        }
+        pair(a.px("wingL"), a.px("wingR"), 0.08 * o[.noseWing], 0, 0.22)
+        pair(a.px("wingL"), a.px("wingR"), 0.06 * o[.noseNarrow], 0, 0.5)
+
+        // Mouth
+        pair(a.px("mouthL"), a.px("mouthR"), -0.07 * o[.mouthWidth], 0, 0.35)
+        let fl = o[.fullLip]
+        if fl != 0 { move(a.px("lipTop"), 0, -0.04 * fl, 0.28); move(a.px("lipBottom"), 0, 0.05 * fl, 0.3) }
+        scaleAt(a.px("mouthC"), 0.22 * o[.mouthSize], 0.62)
+        move(a.px("mouthC"), 0, -0.07 * o[.mouthHeight], 0.6)
+        let sm = o[.smile]
+        if sm != 0 { move(a.px("mouthL"), -0.03 * sm, -0.06 * sm, 0.3); move(a.px("mouthR"), 0.03 * sm, -0.06 * sm, 0.3) }
+        return n
     }
 
     private func needsRegions(_ o: AppBeautyOptions) -> Bool {

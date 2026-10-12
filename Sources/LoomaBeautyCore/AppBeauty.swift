@@ -2,7 +2,6 @@ import Foundation
 import CoreVideo
 import QuartzCore
 import UIKit
-import AppLoomaRTC
 
 /// Looma Beauty Camera: GPU skin smoothing, whitening, rosy tone, sharpening,
 /// make-up, colour filters, face masks and virtual backgrounds on the camera,
@@ -11,13 +10,14 @@ import AppLoomaRTC
 ///
 /// ```swift
 /// let beauty = AppBeauty.create()          // Smart Beauty is on from the start
-/// engine.setVideoProcessor(beauty)
+/// engine.setVideoProcessor(beauty)         // with LoomaBeautyCamera (AppLooma RTC)
+/// let out = beauty.process(pixelBuffer, rotation: 90, timestamp: t)   // or any camera pipeline
 /// AppBeautyPanel.show(in: self, beauty: beauty)
 /// ```
-/// Change `options` at any time; the next frame uses them. Remove with
-/// `engine.setVideoProcessor(nil)`.
-public final class AppBeauty: AppVideoFrameProcessor {
-    public static let version = "0.1.0"
+/// Change `options` at any time; the next frame uses them. With AppLooma RTC,
+/// remove it with `engine.setVideoProcessor(nil)`.
+public final class AppBeauty {
+    public static let version = "0.2.0"
     /// On from the start: the Smart Beauty preset.
     public static var defaultOptions: AppBeautyOptions { AppBeautyPreset.smart.options }
     /// No effect at all.
@@ -97,7 +97,15 @@ public final class AppBeauty: AppVideoFrameProcessor {
     /// queue. Nothing arrives while no frames flow.
     public func snapshot(_ callback: @escaping (UIImage) -> Void) { gpu?.snapshotRequest = callback }
 
-    // MARK: AppVideoFrameProcessor
+    // MARK: Frames
+
+    /// Processes one camera frame and returns the picture to send: a new
+    /// 32BGRA buffer of the same size, or `pixelBuffer` itself when nothing is
+    /// drawn. Call it on the capture thread for every frame.
+    /// - Parameters:
+    ///   - pixelBuffer: the camera picture as captured, before rotation (32BGRA or 420f/420v).
+    ///   - rotation: clockwise degrees (0, 90, 180, 270) that make the picture upright.
+    ///   - timestamp: capture time in nanoseconds.
 
     public func process(_ pixelBuffer: CVPixelBuffer, rotation: Int, timestamp: Int64) -> CVPixelBuffer {
         guard let gpu, !failed else { return pixelBuffer }

@@ -96,8 +96,8 @@ public enum AppBeautyItem: String, CaseIterable {
     }
     var min: Float { bipolar ? -1 : 0 }
 
-    /// Face-shape items. Version 0.1.0 of the iOS camera does not reshape the
-    /// face: these are kept in the options and shown in the panel, but draw nothing.
+    /// Face-shape items: drawn as local warps of the picture around the face
+    /// landmarks (since 0.2.0; 0.1.0 kept them but drew nothing).
     public var isReshape: Bool {
         switch self {
         case .slimFace, .vFace, .cheekbone, .chin, .temple, .forehead, .faceShrink, .chinShape, .shortFace, .jaw,
@@ -280,7 +280,7 @@ final class BeautyCatalog {
     private(set) var defaultPreset = "SMART"
 
     private init() {
-        guard let url = Bundle.module.url(forResource: "beauty-catalog", withExtension: "json"),
+        guard let url = BeautyResources.bundle.url(forResource: "beauty-catalog", withExtension: "json"),
               let data = try? Data(contentsOf: url),
               let root = (try? JSONSerialization.jsonObject(with: data)) as? [String: Any] else {
             presets = [AppBeautyPreset(id: "SMART", title: "Smart Beauty", subtitle: "", tag: "", options: AppBeautyOptions(), card: nil)]
