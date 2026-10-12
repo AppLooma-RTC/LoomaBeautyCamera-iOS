@@ -1,0 +1,6366 @@
+{
+ "version": 1,
+ "cdn": {
+  "bg": "https://assets.applooma.dev/beauty/v1/bg/",
+  "mask": "https://assets.applooma.dev/beauty/v2/mask/",
+  "cards": "https://assets.applooma.dev/beauty/v1/cards/"
+ },
+ "groups": [
+  "SKIN",
+  "TOUCH_UP",
+  "FACE",
+  "EYES",
+  "NOSE",
+  "MOUTH"
+ ],
+ "items": [
+  {
+   "id": "SMOOTH",
+   "group": "SKIN",
+   "title": "Skin",
+   "bipolar": false
+  },
+  {
+   "id": "COMPLEXION",
+   "group": "SKIN",
+   "title": "Complexion",
+   "bipolar": false
+  },
+  {
+   "id": "CONTOUR",
+   "group": "SKIN",
+   "title": "Contour",
+   "bipolar": false
+  },
+  {
+   "id": "LIGHT_3D",
+   "group": "SKIN",
+   "title": "3D Light",
+   "bipolar": false
+  },
+  {
+   "id": "BRIGHTEN",
+   "group": "SKIN",
+   "title": "Brighten",
+   "bipolar": false
+  },
+  {
+   "id": "ROSY",
+   "group": "SKIN",
+   "title": "Rosy",
+   "bipolar": false
+  },
+  {
+   "id": "CONTRAST",
+   "group": "SKIN",
+   "title": "Contrast",
+   "bipolar": true
+  },
+  {
+   "id": "SHARPEN",
+   "group": "SKIN",
+   "title": "Sharpen",
+   "bipolar": false
+  },
+  {
+   "id": "LOW_LIGHT",
+   "group": "SKIN",
+   "title": "Low Light",
+   "bipolar": false
+  },
+  {
+   "id": "LIPSTICK",
+   "group": "TOUCH_UP",
+   "title": "Lipstick",
+   "bipolar": false
+  },
+  {
+   "id": "EYEBROW",
+   "group": "TOUCH_UP",
+   "title": "Eyebrow",
+   "bipolar": false
+  },
+  {
+   "id": "EYESHADOW",
+   "group": "TOUCH_UP",
+   "title": "Eyeshadow",
+   "bipolar": false
+  },
+  {
+   "id": "EYELASH",
+   "group": "TOUCH_UP",
+   "title": "Eyelash",
+   "bipolar": false
+  },
+  {
+   "id": "LENSES",
+   "group": "TOUCH_UP",
+   "title": "Beauty Lenses",
+   "bipolar": false
+  },
+  {
+   "id": "BLEMISH",
+   "group": "TOUCH_UP",
+   "title": "Blemish",
+   "bipolar": false
+  },
+  {
+   "id": "SLIM_FACE",
+   "group": "FACE",
+   "title": "Slim",
+   "bipolar": false
+  },
+  {
+   "id": "V_FACE",
+   "group": "FACE",
+   "title": "Shape",
+   "bipolar": false
+  },
+  {
+   "id": "CHEEKBONE",
+   "group": "FACE",
+   "title": "Cheek",
+   "bipolar": false
+  },
+  {
+   "id": "CHIN",
+   "group": "FACE",
+   "title": "Chin",
+   "bipolar": true
+  },
+  {
+   "id": "TEMPLE",
+   "group": "FACE",
+   "title": "Temple",
+   "bipolar": true
+  },
+  {
+   "id": "FOREHEAD",
+   "group": "FACE",
+   "title": "Hairline",
+   "bipolar": true
+  },
+  {
+   "id": "FACE_SHRINK",
+   "group": "FACE",
+   "title": "Face Shrink",
+   "bipolar": false
+  },
+  {
+   "id": "CHIN_SHAPE",
+   "group": "FACE",
+   "title": "Chin Shape",
+   "bipolar": false
+  },
+  {
+   "id": "SHORT_FACE",
+   "group": "FACE",
+   "title": "Shorten Face",
+   "bipolar": false
+  },
+  {
+   "id": "JAW",
+   "group": "FACE",
+   "title": "Jaw",
+   "bipolar": false
+  },
+  {
+   "id": "BIG_EYES",
+   "group": "EYES",
+   "title": "Enlarge",
+   "bipolar": false
+  },
+  {
+   "id": "PUPILS",
+   "group": "EYES",
+   "title": "Pupils",
+   "bipolar": false
+  },
+  {
+   "id": "BRIGHT_EYES",
+   "group": "EYES",
+   "title": "Clarity",
+   "bipolar": false
+  },
+  {
+   "id": "DARK_CIRCLES",
+   "group": "EYES",
+   "title": "Circle",
+   "bipolar": false
+  },
+  {
+   "id": "EYELID",
+   "group": "EYES",
+   "title": "Eyelid",
+   "bipolar": false
+  },
+  {
+   "id": "BROW_HEIGHT",
+   "group": "EYES",
+   "title": "Eyebrow Height",
+   "bipolar": true
+  },
+  {
+   "id": "EYE_HEIGHT",
+   "group": "EYES",
+   "title": "Eye Height",
+   "bipolar": true
+  },
+  {
+   "id": "EYE_ANGLE",
+   "group": "EYES",
+   "title": "Eye Shape",
+   "bipolar": true
+  },
+  {
+   "id": "BROW_SHAPE",
+   "group": "EYES",
+   "title": "Eyebrow Shape",
+   "bipolar": true
+  },
+  {
+   "id": "BROW_TRIM",
+   "group": "EYES",
+   "title": "Brow - trim",
+   "bipolar": false
+  },
+  {
+   "id": "EYE_DISTANCE",
+   "group": "EYES",
+   "title": "Eye Distance",
+   "bipolar": true
+  },
+  {
+   "id": "SMILE_LINES",
+   "group": "NOSE",
+   "title": "Wrinkles",
+   "bipolar": false
+  },
+  {
+   "id": "NOSE_TIP",
+   "group": "NOSE",
+   "title": "Nose - tip",
+   "bipolar": true
+  },
+  {
+   "id": "PHILTRUM",
+   "group": "NOSE",
+   "title": "Philtrum",
+   "bipolar": true
+  },
+  {
+   "id": "SLIM_NOSE",
+   "group": "NOSE",
+   "title": "Nose",
+   "bipolar": false
+  },
+  {
+   "id": "NOSE_NARROW",
+   "group": "NOSE",
+   "title": "Narrow",
+   "bipolar": false
+  },
+  {
+   "id": "BRIDGE",
+   "group": "NOSE",
+   "title": "Bridge",
+   "bipolar": false
+  },
+  {
+   "id": "NASAL_BRIDGE",
+   "group": "NOSE",
+   "title": "Nasal Bridge",
+   "bipolar": false
+  },
+  {
+   "id": "NOSE_WING",
+   "group": "NOSE",
+   "title": "Wings",
+   "bipolar": false
+  },
+  {
+   "id": "MOUTH_WIDTH",
+   "group": "MOUTH",
+   "title": "Mouth",
+   "bipolar": true
+  },
+  {
+   "id": "WHITE_TEETH",
+   "group": "MOUTH",
+   "title": "Tooth",
+   "bipolar": false
+  },
+  {
+   "id": "FULL_LIP",
+   "group": "MOUTH",
+   "title": "Full lip",
+   "bipolar": true
+  },
+  {
+   "id": "MOUTH_SIZE",
+   "group": "MOUTH",
+   "title": "Mouth Size",
+   "bipolar": true
+  },
+  {
+   "id": "MOUTH_HEIGHT",
+   "group": "MOUTH",
+   "title": "Mouth Height",
+   "bipolar": true
+  },
+  {
+   "id": "SMILE",
+   "group": "MOUTH",
+   "title": "Smile",
+   "bipolar": false
+  }
+ ],
+ "tones": [
+  {
+   "id": "T01",
+   "rgb": [
+    0.97,
+    0.82,
+    0.74
+   ]
+  },
+  {
+   "id": "T02",
+   "rgb": [
+    0.91,
+    0.73,
+    0.59
+   ]
+  },
+  {
+   "id": "T03",
+   "rgb": [
+    0.79,
+    0.59,
+    0.43
+   ]
+  },
+  {
+   "id": "T04",
+   "rgb": [
+    0.62,
+    0.43,
+    0.3
+   ]
+  }
+ ],
+ "presets": [
+  {
+   "id": "SMART",
+   "title": "Smart Beauty",
+   "subtitle": "Reads your face, fits the look",
+   "tag": "One-tap glow",
+   "values": {
+    "SMOOTH": 0.85,
+    "BRIGHTEN": 0.7,
+    "ROSY": 0.3,
+    "SHARPEN": 0.55,
+    "DARK_CIRCLES": 0.6,
+    "BLEMISH": 0.7,
+    "BRIGHT_EYES": 0.5,
+    "LIPSTICK": 0.6
+   },
+   "filter": "NATURAL",
+   "filterIntensity": 0.4,
+   "makeup": "NONE",
+   "makeupIntensity": 0.6,
+   "card": "preset_smart.jpg"
+  },
+  {
+   "id": "NATURAL",
+   "title": "Natural Skin",
+   "subtitle": "Even tone, nothing extra",
+   "tag": "Skin-like finish",
+   "values": {
+    "SMOOTH": 0.65,
+    "BRIGHTEN": 0.8,
+    "ROSY": 0.35,
+    "SHARPEN": 0.3,
+    "COMPLEXION": 0.3,
+    "BLEMISH": 0.6,
+    "BRIGHT_EYES": 0.4,
+    "LIPSTICK": 0.35,
+    "DARK_CIRCLES": 0.5
+   },
+   "filter": "NATURAL",
+   "filterIntensity": 0.6,
+   "makeup": "NONE",
+   "makeupIntensity": 0.6,
+   "card": "preset_natural.jpg"
+  },
+  {
+   "id": "FRESH",
+   "title": "Fresh Air",
+   "subtitle": "Light and breathable",
+   "tag": "Fresh base",
+   "values": {
+    "SMOOTH": 0.55,
+    "BRIGHTEN": 0.6,
+    "ROSY": 0.2,
+    "SHARPEN": 0.2,
+    "BRIGHT_EYES": 0.3,
+    "DARK_CIRCLES": 0.5
+   },
+   "filter": "FRESH",
+   "filterIntensity": 0.7,
+   "makeup": "NONE",
+   "makeupIntensity": 0.6,
+   "card": "preset_fresh.jpg"
+  },
+  {
+   "id": "SOFT_FOCUS",
+   "title": "Soft Focus",
+   "subtitle": "Gentle and flawless",
+   "tag": "Soft-filter look",
+   "values": {
+    "SMOOTH": 0.8,
+    "BRIGHTEN": 0.7,
+    "ROSY": 0.3,
+    "BLEMISH": 0.7,
+    "LIGHT_3D": 0.3
+   },
+   "filter": "BLUSH",
+   "filterIntensity": 0.6,
+   "makeup": "ROSY",
+   "makeupIntensity": 0.35,
+   "card": "preset_soft_focus.jpg"
+  },
+  {
+   "id": "MEN",
+   "title": "Men Matte",
+   "subtitle": "Clean and defined",
+   "tag": "Sculpted finish",
+   "values": {
+    "SMOOTH": 0.3,
+    "BRIGHTEN": 0.35,
+    "SHARPEN": 0.4,
+    "CONTOUR": 0.35,
+    "DARK_CIRCLES": 0.4
+   },
+   "filter": "NATURAL",
+   "filterIntensity": 0.5,
+   "makeup": "NONE",
+   "makeupIntensity": 0.6,
+   "card": "preset_men.jpg"
+  },
+  {
+   "id": "YOUTH",
+   "title": "Youth Glow",
+   "subtitle": "Bright and lifted",
+   "tag": "Bare glow",
+   "values": {
+    "SMOOTH": 0.6,
+    "BRIGHTEN": 0.65,
+    "ROSY": 0.25,
+    "LIGHT_3D": 0.4,
+    "SMILE_LINES": 0.6,
+    "DARK_CIRCLES": 0.6
+   },
+   "filter": "FRESH",
+   "filterIntensity": 0.5,
+   "makeup": "NONE",
+   "makeupIntensity": 0.6,
+   "card": "preset_youth.jpg"
+  },
+  {
+   "id": "GLASS",
+   "title": "Glass Skin",
+   "subtitle": "Clear, dewy and bright",
+   "tag": "Glass finish",
+   "values": {
+    "SMOOTH": 0.6,
+    "BRIGHTEN": 0.55,
+    "LIGHT_3D": 0.45,
+    "BLEMISH": 0.6,
+    "DARK_CIRCLES": 0.5,
+    "BRIGHT_EYES": 0.3
+   },
+   "filter": "GLOW",
+   "filterIntensity": 0.45,
+   "makeup": "NONE",
+   "makeupIntensity": 0.6,
+   "card": "preset_glass.jpg"
+  },
+  {
+   "id": "ROSY_GLOW",
+   "title": "Rosy Glow",
+   "subtitle": "Warm, healthy flush",
+   "tag": "Rosy finish",
+   "values": {
+    "SMOOTH": 0.5,
+    "BRIGHTEN": 0.45,
+    "ROSY": 0.45,
+    "BLEMISH": 0.5
+   },
+   "filter": "BLUSH",
+   "filterIntensity": 0.5,
+   "makeup": "ROSY",
+   "makeupIntensity": 0.3,
+   "card": "preset_rosy_glow.jpg"
+  },
+  {
+   "id": "PURE",
+   "title": "Pure",
+   "subtitle": "Light touch, true you",
+   "tag": "Barely-there",
+   "values": {
+    "SMOOTH": 0.3,
+    "BLEMISH": 0.45,
+    "DARK_CIRCLES": 0.35,
+    "SHARPEN": 0.3
+   },
+   "filter": "NATURAL",
+   "filterIntensity": 0.3,
+   "makeup": "NONE",
+   "makeupIntensity": 0.6,
+   "card": "preset_pure.jpg"
+  },
+  {
+   "id": "GENTLEMAN",
+   "title": "Gentleman",
+   "subtitle": "Sharp and refined",
+   "tag": "Groomed finish",
+   "values": {
+    "SMOOTH": 0.25,
+    "SHARPEN": 0.5,
+    "CONTOUR": 0.4,
+    "DARK_CIRCLES": 0.45,
+    "BRIGHTEN": 0.33
+   },
+   "filter": "URBAN",
+   "filterIntensity": 0.4,
+   "makeup": "NONE",
+   "makeupIntensity": 0.6,
+   "card": "preset_gentleman.jpg"
+  }
+ ],
+ "default": "SMART",
+ "filterCategories": [
+  {
+   "id": "NEW",
+   "title": "New"
+  },
+  {
+   "id": "PORTRAIT",
+   "title": "Portrait"
+  },
+  {
+   "id": "WARM",
+   "title": "Warm"
+  },
+  {
+   "id": "MALE",
+   "title": "Male"
+  },
+  {
+   "id": "SATURATED",
+   "title": "Saturated"
+  },
+  {
+   "id": "PREMIUM",
+   "title": "Premium"
+  },
+  {
+   "id": "TRIP",
+   "title": "Trip"
+  },
+  {
+   "id": "FOOD",
+   "title": "Food"
+  },
+  {
+   "id": "STYLISH",
+   "title": "Stylish"
+  }
+ ],
+ "filters": [
+  {
+   "id": "NONE",
+   "category": null,
+   "title": "Off",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 1.0,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "GLOW",
+   "category": "NEW",
+   "title": "Glow",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 1.2,
+   "con": 1.0,
+   "lift": 0.02,
+   "exp": 0.07,
+   "mono": false
+  },
+  {
+   "id": "PEARL",
+   "category": "NEW",
+   "title": "Pearl",
+   "warm": 0.0,
+   "tint": -0.25,
+   "sat": 0.9,
+   "con": 1.0,
+   "lift": 0.02,
+   "exp": 0.06,
+   "mono": false
+  },
+  {
+   "id": "HONEY",
+   "category": "NEW",
+   "title": "Honey",
+   "warm": 0.8,
+   "tint": 0.1,
+   "sat": 1.08,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.03,
+   "mono": false
+  },
+  {
+   "id": "MINT",
+   "category": "NEW",
+   "title": "Mint",
+   "warm": -0.4,
+   "tint": 0.4,
+   "sat": 1.02,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "SUNSET",
+   "category": "NEW",
+   "title": "Sunset",
+   "warm": 1.0,
+   "tint": -0.3,
+   "sat": 1.12,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "NATURAL",
+   "category": "PORTRAIT",
+   "title": "Natural",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 1.05,
+   "con": 1.03,
+   "lift": 0.0,
+   "exp": 0.03,
+   "mono": false
+  },
+  {
+   "id": "SOFT",
+   "category": "PORTRAIT",
+   "title": "Soft",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 0.95,
+   "con": 0.94,
+   "lift": 0.03,
+   "exp": 0.04,
+   "mono": false
+  },
+  {
+   "id": "CLEAR",
+   "category": "PORTRAIT",
+   "title": "Clear",
+   "warm": -0.2,
+   "tint": 0.0,
+   "sat": 1.02,
+   "con": 1.05,
+   "lift": 0.0,
+   "exp": 0.05,
+   "mono": false
+  },
+  {
+   "id": "FAIR",
+   "category": "PORTRAIT",
+   "title": "Fair",
+   "warm": -0.1,
+   "tint": -0.15,
+   "sat": 0.95,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.08,
+   "mono": false
+  },
+  {
+   "id": "BLUSH",
+   "category": "PORTRAIT",
+   "title": "Blush",
+   "warm": 0.2,
+   "tint": -0.45,
+   "sat": 1.05,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.03,
+   "mono": false
+  },
+  {
+   "id": "PRINCESS",
+   "category": "PORTRAIT",
+   "title": "Princess",
+   "warm": 0.1,
+   "tint": -0.3,
+   "sat": 1.05,
+   "con": 0.98,
+   "lift": 0.02,
+   "exp": 0.06,
+   "mono": false
+  },
+  {
+   "id": "CLASSIC",
+   "category": "PORTRAIT",
+   "title": "Classic",
+   "warm": 0.2,
+   "tint": 0.0,
+   "sat": 0.95,
+   "con": 1.05,
+   "lift": 0.0,
+   "exp": 0.02,
+   "mono": false
+  },
+  {
+   "id": "SWEET",
+   "category": "PORTRAIT",
+   "title": "Sweet",
+   "warm": 0.1,
+   "tint": -0.35,
+   "sat": 1.1,
+   "con": 0.97,
+   "lift": 0.0,
+   "exp": 0.05,
+   "mono": false
+  },
+  {
+   "id": "AIRY",
+   "category": "PORTRAIT",
+   "title": "Airy",
+   "warm": -0.1,
+   "tint": 0.0,
+   "sat": 0.9,
+   "con": 0.92,
+   "lift": 0.04,
+   "exp": 0.07,
+   "mono": false
+  },
+  {
+   "id": "LIGHTLY",
+   "category": "PORTRAIT",
+   "title": "Lightly",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 0.92,
+   "con": 0.95,
+   "lift": 0.02,
+   "exp": 0.05,
+   "mono": false
+  },
+  {
+   "id": "WHITE",
+   "category": "PORTRAIT",
+   "title": "White",
+   "warm": -0.15,
+   "tint": -0.05,
+   "sat": 0.85,
+   "con": 0.98,
+   "lift": 0.0,
+   "exp": 0.1,
+   "mono": false
+  },
+  {
+   "id": "FRESH",
+   "category": "PORTRAIT",
+   "title": "Fresh",
+   "warm": -0.3,
+   "tint": 0.15,
+   "sat": 1.12,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.04,
+   "mono": false
+  },
+  {
+   "id": "WARM",
+   "category": "WARM",
+   "title": "Warm",
+   "warm": 0.6,
+   "tint": 0.0,
+   "sat": 1.0,
+   "con": 1.02,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "LATTE",
+   "category": "WARM",
+   "title": "Latte",
+   "warm": 0.5,
+   "tint": 0.0,
+   "sat": 0.82,
+   "con": 0.96,
+   "lift": 0.05,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "AMBER",
+   "category": "WARM",
+   "title": "Amber",
+   "warm": 0.9,
+   "tint": 0.2,
+   "sat": 1.0,
+   "con": 1.06,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "FILM",
+   "category": "WARM",
+   "title": "Film",
+   "warm": 0.3,
+   "tint": 0.0,
+   "sat": 0.85,
+   "con": 1.0,
+   "lift": 0.06,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "COSY",
+   "category": "WARM",
+   "title": "Cosy",
+   "warm": 0.7,
+   "tint": 0.1,
+   "sat": 0.95,
+   "con": 0.98,
+   "lift": 0.03,
+   "exp": 0.02,
+   "mono": false
+  },
+  {
+   "id": "CHERRY",
+   "category": "WARM",
+   "title": "Cherry",
+   "warm": 0.4,
+   "tint": -0.4,
+   "sat": 1.1,
+   "con": 1.02,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "TANNING",
+   "category": "WARM",
+   "title": "Tanning",
+   "warm": 0.8,
+   "tint": 0.15,
+   "sat": 1.05,
+   "con": 1.08,
+   "lift": 0.0,
+   "exp": -0.02,
+   "mono": false
+  },
+  {
+   "id": "URBAN",
+   "category": "MALE",
+   "title": "Urban",
+   "warm": -0.2,
+   "tint": 0.0,
+   "sat": 0.8,
+   "con": 1.1,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "CHARCOAL",
+   "category": "MALE",
+   "title": "Charcoal",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 0.6,
+   "con": 1.12,
+   "lift": 0.0,
+   "exp": -0.02,
+   "mono": false
+  },
+  {
+   "id": "BRONZE",
+   "category": "MALE",
+   "title": "Bronze",
+   "warm": 0.5,
+   "tint": 0.0,
+   "sat": 0.9,
+   "con": 1.08,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "MONO",
+   "category": "MALE",
+   "title": "Mono",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 1.0,
+   "con": 1.06,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": true
+  },
+  {
+   "id": "STEEL",
+   "category": "MALE",
+   "title": "Steel",
+   "warm": -0.5,
+   "tint": 0.0,
+   "sat": 0.75,
+   "con": 1.1,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "VIVID",
+   "category": "SATURATED",
+   "title": "Vivid",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 1.3,
+   "con": 1.08,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "POP",
+   "category": "SATURATED",
+   "title": "Pop",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 1.45,
+   "con": 1.12,
+   "lift": 0.0,
+   "exp": 0.02,
+   "mono": false
+  },
+  {
+   "id": "BERRY",
+   "category": "SATURATED",
+   "title": "Berry",
+   "warm": 0.2,
+   "tint": -0.5,
+   "sat": 1.25,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "RAINBOW",
+   "category": "SATURATED",
+   "title": "Rainbow",
+   "warm": 0.1,
+   "tint": -0.1,
+   "sat": 1.5,
+   "con": 1.05,
+   "lift": 0.0,
+   "exp": 0.02,
+   "mono": false
+  },
+  {
+   "id": "FANTA",
+   "category": "SATURATED",
+   "title": "Fanta",
+   "warm": 0.8,
+   "tint": 0.0,
+   "sat": 1.4,
+   "con": 1.05,
+   "lift": 0.0,
+   "exp": 0.02,
+   "mono": false
+  },
+  {
+   "id": "CHIC",
+   "category": "PREMIUM",
+   "title": "Chic",
+   "warm": -0.1,
+   "tint": 0.0,
+   "sat": 0.85,
+   "con": 1.1,
+   "lift": 0.02,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "MOCHA",
+   "category": "PREMIUM",
+   "title": "Mocha",
+   "warm": 0.5,
+   "tint": 0.05,
+   "sat": 0.8,
+   "con": 1.04,
+   "lift": 0.04,
+   "exp": -0.02,
+   "mono": false
+  },
+  {
+   "id": "DIM",
+   "category": "PREMIUM",
+   "title": "Dim",
+   "warm": 0.0,
+   "tint": 0.0,
+   "sat": 0.85,
+   "con": 1.05,
+   "lift": 0.0,
+   "exp": -0.06,
+   "mono": false
+  },
+  {
+   "id": "CRUSH",
+   "category": "PREMIUM",
+   "title": "Crush",
+   "warm": 0.3,
+   "tint": -0.3,
+   "sat": 1.15,
+   "con": 1.08,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "MICROFILM",
+   "category": "PREMIUM",
+   "title": "Microfilm",
+   "warm": 0.2,
+   "tint": 0.1,
+   "sat": 0.8,
+   "con": 1.08,
+   "lift": 0.05,
+   "exp": -0.02,
+   "mono": false
+  },
+  {
+   "id": "FUJI_BLUE",
+   "category": "TRIP",
+   "title": "Fuji Blue",
+   "warm": -0.7,
+   "tint": 0.1,
+   "sat": 1.05,
+   "con": 1.02,
+   "lift": 0.0,
+   "exp": 0.02,
+   "mono": false
+  },
+  {
+   "id": "ISLAND",
+   "category": "TRIP",
+   "title": "Island",
+   "warm": -0.3,
+   "tint": 0.3,
+   "sat": 1.2,
+   "con": 1.05,
+   "lift": 0.0,
+   "exp": 0.04,
+   "mono": false
+  },
+  {
+   "id": "VACATION",
+   "category": "TRIP",
+   "title": "Vacation",
+   "warm": 0.4,
+   "tint": 0.1,
+   "sat": 1.15,
+   "con": 1.03,
+   "lift": 0.0,
+   "exp": 0.05,
+   "mono": false
+  },
+  {
+   "id": "SUNNY",
+   "category": "TRIP",
+   "title": "Sunny",
+   "warm": 0.6,
+   "tint": 0.2,
+   "sat": 1.1,
+   "con": 1.02,
+   "lift": 0.0,
+   "exp": 0.06,
+   "mono": false
+  },
+  {
+   "id": "COOL",
+   "category": "TRIP",
+   "title": "Cool",
+   "warm": -0.6,
+   "tint": 0.0,
+   "sat": 1.0,
+   "con": 1.0,
+   "lift": 0.0,
+   "exp": 0.02,
+   "mono": false
+  },
+  {
+   "id": "DESSERT",
+   "category": "FOOD",
+   "title": "Dessert",
+   "warm": 0.3,
+   "tint": -0.2,
+   "sat": 1.15,
+   "con": 1.0,
+   "lift": 0.02,
+   "exp": 0.05,
+   "mono": false
+  },
+  {
+   "id": "SNACKS",
+   "category": "FOOD",
+   "title": "Snacks",
+   "warm": 0.6,
+   "tint": 0.1,
+   "sat": 1.2,
+   "con": 1.05,
+   "lift": 0.0,
+   "exp": 0.03,
+   "mono": false
+  },
+  {
+   "id": "BAKERY",
+   "category": "FOOD",
+   "title": "Bakery",
+   "warm": 0.7,
+   "tint": 0.15,
+   "sat": 1.05,
+   "con": 1.02,
+   "lift": 0.03,
+   "exp": 0.02,
+   "mono": false
+  },
+  {
+   "id": "FRESH_FOOD",
+   "category": "FOOD",
+   "title": "Fresh",
+   "warm": -0.2,
+   "tint": 0.3,
+   "sat": 1.25,
+   "con": 1.05,
+   "lift": 0.0,
+   "exp": 0.04,
+   "mono": false
+  },
+  {
+   "id": "BUTTERFLY",
+   "category": "STYLISH",
+   "title": "Butterfly",
+   "warm": -0.2,
+   "tint": -0.4,
+   "sat": 1.15,
+   "con": 1.02,
+   "lift": 0.02,
+   "exp": 0.04,
+   "mono": false
+  },
+  {
+   "id": "HALO",
+   "category": "STYLISH",
+   "title": "Halo",
+   "warm": 0.1,
+   "tint": -0.2,
+   "sat": 1.0,
+   "con": 0.95,
+   "lift": 0.05,
+   "exp": 0.08,
+   "mono": false
+  },
+  {
+   "id": "NEON",
+   "category": "STYLISH",
+   "title": "Neon",
+   "warm": -0.4,
+   "tint": -0.5,
+   "sat": 1.4,
+   "con": 1.1,
+   "lift": 0.0,
+   "exp": 0.0,
+   "mono": false
+  },
+  {
+   "id": "DUSK",
+   "category": "STYLISH",
+   "title": "Dusk",
+   "warm": 0.3,
+   "tint": -0.5,
+   "sat": 0.9,
+   "con": 1.05,
+   "lift": 0.04,
+   "exp": -0.03,
+   "mono": false
+  }
+ ],
+ "makeupCategories": [
+  {
+   "id": "NEW",
+   "title": "New"
+  },
+  {
+   "id": "BASIC",
+   "title": "Basic"
+  },
+  {
+   "id": "IDOL",
+   "title": "Idol"
+  },
+  {
+   "id": "INS",
+   "title": "Ins style"
+  },
+  {
+   "id": "MALE",
+   "title": "Male"
+  },
+  {
+   "id": "VOGUE",
+   "title": "Vogue"
+  },
+  {
+   "id": "GORGEOUS",
+   "title": "Gorgeous"
+  }
+ ],
+ "makeup": [
+  {
+   "id": "NONE",
+   "category": null,
+   "title": "Off",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.0,
+   "lash": 0.0,
+   "filter": "NONE",
+   "card": "makeup_none.jpg"
+  },
+  {
+   "id": "CANDY_POP",
+   "category": "NEW",
+   "title": "Candy Pop",
+   "lip": "#F0607A",
+   "blush": "#F8A0B8",
+   "shadow": "#F4A8C8",
+   "shadowAmt": 0.5,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.5,
+   "filter": "BLUSH",
+   "card": "makeup_candy_pop.jpg"
+  },
+  {
+   "id": "HONEY_GLAZE",
+   "category": "NEW",
+   "title": "Honey Glaze",
+   "lip": "#D98A5A",
+   "blush": "#F0B080",
+   "shadow": "#D8A060",
+   "shadowAmt": 0.55,
+   "liner": 0.35,
+   "brow": 0.3,
+   "lash": 0.4,
+   "filter": "HONEY",
+   "card": "makeup_honey_glaze.jpg"
+  },
+  {
+   "id": "ROSE_QUARTZ",
+   "category": "NEW",
+   "title": "Rose Quartz",
+   "lip": "#D07890",
+   "blush": "#F0A8B8",
+   "shadow": "#E0A8C0",
+   "shadowAmt": 0.45,
+   "liner": 0.25,
+   "brow": 0.2,
+   "lash": 0.4,
+   "filter": "PEARL",
+   "card": "makeup_rose_quartz.jpg"
+  },
+  {
+   "id": "MOON_GLOW",
+   "category": "NEW",
+   "title": "Moon Glow",
+   "lip": "#C88A90",
+   "blush": "#E8B0B0",
+   "shadow": "#C8C0D8",
+   "shadowAmt": 0.5,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.4,
+   "filter": "GLOW",
+   "card": "makeup_moon_glow.jpg"
+  },
+  {
+   "id": "CHERRY_KISS",
+   "category": "NEW",
+   "title": "Cherry Kiss",
+   "lip": "#B01830",
+   "blush": "#E89090",
+   "shadow": "#B09088",
+   "shadowAmt": 0.25,
+   "liner": 0.6,
+   "brow": 0.4,
+   "lash": 0.5,
+   "filter": "CLEAR",
+   "card": "makeup_cherry_kiss.jpg"
+  },
+  {
+   "id": "SUNKISSED",
+   "category": "NEW",
+   "title": "Sunkissed",
+   "lip": "#D0705A",
+   "blush": "#F09060",
+   "shadow": "#D09060",
+   "shadowAmt": 0.4,
+   "liner": 0.3,
+   "brow": 0.3,
+   "lash": 0.3,
+   "filter": "SUNSET",
+   "card": "makeup_sunkissed.jpg"
+  },
+  {
+   "id": "PLUM_VELVET",
+   "category": "NEW",
+   "title": "Plum Velvet",
+   "lip": "#6E2440",
+   "blush": "#C08098",
+   "shadow": "#7A4A68",
+   "shadowAmt": 0.6,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.5,
+   "filter": "BERRY",
+   "card": "makeup_plum_velvet.jpg"
+  },
+  {
+   "id": "PEARL_DEW",
+   "category": "NEW",
+   "title": "Pearl Dew",
+   "lip": "#E89A9A",
+   "blush": "#F2B8B0",
+   "shadow": "#F0D8D0",
+   "shadowAmt": 0.4,
+   "liner": 0.2,
+   "brow": 0.2,
+   "lash": 0.3,
+   "filter": "PEARL",
+   "card": "makeup_pearl_dew.jpg"
+  },
+  {
+   "id": "NUDE",
+   "category": "BASIC",
+   "title": "Nude",
+   "lip": "#C99486",
+   "blush": "#E8A99A",
+   "shadow": "#B08A78",
+   "shadowAmt": 0.3,
+   "liner": 0.3,
+   "brow": 0.3,
+   "lash": 0.2,
+   "filter": "NATURAL",
+   "card": "makeup_nude.jpg"
+  },
+  {
+   "id": "PEACH",
+   "category": "BASIC",
+   "title": "Peach",
+   "lip": "#F08A6A",
+   "blush": "#F5A88A",
+   "shadow": "#F0B49A",
+   "shadowAmt": 0.4,
+   "liner": 0.2,
+   "brow": 0.2,
+   "lash": 0.3,
+   "filter": "HONEY",
+   "card": "makeup_peach.jpg"
+  },
+  {
+   "id": "ROSY",
+   "category": "BASIC",
+   "title": "Rosy",
+   "lip": "#D9577A",
+   "blush": "#F59DB3",
+   "shadow": "#E8A3B8",
+   "shadowAmt": 0.4,
+   "liner": 0.2,
+   "brow": 0.2,
+   "lash": 0.3,
+   "filter": "BLUSH",
+   "card": "makeup_rosy.jpg"
+  },
+  {
+   "id": "COFFEE",
+   "category": "BASIC",
+   "title": "Coffee",
+   "lip": "#8A5040",
+   "blush": "#C88A6E",
+   "shadow": "#8A5A3C",
+   "shadowAmt": 0.55,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.4,
+   "filter": "LATTE",
+   "card": "makeup_coffee.jpg"
+  },
+  {
+   "id": "BARE_SKIN",
+   "category": "BASIC",
+   "title": "Bare Skin",
+   "lip": "#C8908A",
+   "blush": "#E8B0A8",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.1,
+   "brow": 0.3,
+   "lash": 0.1,
+   "filter": "NATURAL",
+   "card": "makeup_bare_skin.jpg"
+  },
+  {
+   "id": "MILK_TEA",
+   "category": "BASIC",
+   "title": "Milk Tea",
+   "lip": "#B98070",
+   "blush": "#E0A898",
+   "shadow": "#B89080",
+   "shadowAmt": 0.4,
+   "liner": 0.3,
+   "brow": 0.3,
+   "lash": 0.3,
+   "filter": "LATTE",
+   "card": "makeup_milk_tea.jpg"
+  },
+  {
+   "id": "DAISY",
+   "category": "BASIC",
+   "title": "Daisy",
+   "lip": "#E88A80",
+   "blush": "#F8B8A0",
+   "shadow": "#F0D0A0",
+   "shadowAmt": 0.4,
+   "liner": 0.2,
+   "brow": 0.2,
+   "lash": 0.3,
+   "filter": "FRESH",
+   "card": "makeup_daisy.jpg"
+  },
+  {
+   "id": "CINNAMON",
+   "category": "BASIC",
+   "title": "Cinnamon",
+   "lip": "#A05A40",
+   "blush": "#D08A68",
+   "shadow": "#A06848",
+   "shadowAmt": 0.5,
+   "liner": 0.4,
+   "brow": 0.3,
+   "lash": 0.4,
+   "filter": "AMBER",
+   "card": "makeup_cinnamon.jpg"
+  },
+  {
+   "id": "SOFT_BERRY",
+   "category": "BASIC",
+   "title": "Soft Berry",
+   "lip": "#A84060",
+   "blush": "#E0A0B0",
+   "shadow": "#C090A8",
+   "shadowAmt": 0.4,
+   "liner": 0.3,
+   "brow": 0.3,
+   "lash": 0.3,
+   "filter": "BLUSH",
+   "card": "makeup_soft_berry.jpg"
+  },
+  {
+   "id": "CORAL_DAY",
+   "category": "BASIC",
+   "title": "Coral Day",
+   "lip": "#F06A5A",
+   "blush": "#F7A486",
+   "shadow": "#F0A890",
+   "shadowAmt": 0.35,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.3,
+   "filter": "FRESH",
+   "card": "makeup_coral_day.jpg"
+  },
+  {
+   "id": "MAUVE",
+   "category": "BASIC",
+   "title": "Mauve",
+   "lip": "#A87080",
+   "blush": "#D8A8B0",
+   "shadow": "#A88898",
+   "shadowAmt": 0.45,
+   "liner": 0.3,
+   "brow": 0.3,
+   "lash": 0.3,
+   "filter": "SOFT",
+   "card": "makeup_mauve.jpg"
+  },
+  {
+   "id": "BRICK",
+   "category": "BASIC",
+   "title": "Brick",
+   "lip": "#9A3A30",
+   "blush": "#D08070",
+   "shadow": "#9A6050",
+   "shadowAmt": 0.4,
+   "liner": 0.4,
+   "brow": 0.4,
+   "lash": 0.4,
+   "filter": "WARM",
+   "card": "makeup_brick.jpg"
+  },
+  {
+   "id": "DOLL_EYE",
+   "category": "IDOL",
+   "title": "Doll Eye",
+   "lip": "#F0809A",
+   "blush": "#F8B0C0",
+   "shadow": "#F0C0D0",
+   "shadowAmt": 0.5,
+   "liner": 0.4,
+   "brow": 0.2,
+   "lash": 0.8,
+   "filter": "PEARL",
+   "card": "makeup_doll_eye.jpg"
+  },
+  {
+   "id": "GRADIENT",
+   "category": "IDOL",
+   "title": "Gradient Lip",
+   "lip": "#E8505A",
+   "blush": "#F5A0A8",
+   "shadow": "#E8B0A0",
+   "shadowAmt": 0.3,
+   "liner": 0.2,
+   "brow": 0.2,
+   "lash": 0.3,
+   "filter": "PEARL",
+   "card": "makeup_gradient.jpg"
+  },
+  {
+   "id": "BLOSSOM",
+   "category": "IDOL",
+   "title": "Blossom",
+   "lip": "#F08AA8",
+   "blush": "#F5A0C0",
+   "shadow": "#F0B0C8",
+   "shadowAmt": 0.45,
+   "liner": 0.2,
+   "brow": 0.2,
+   "lash": 0.4,
+   "filter": "BLUSH",
+   "card": "makeup_blossom.jpg"
+  },
+  {
+   "id": "PEACH_IDOL",
+   "category": "IDOL",
+   "title": "Peach Idol",
+   "lip": "#F07870",
+   "blush": "#F8A898",
+   "shadow": "#F8B8A0",
+   "shadowAmt": 0.5,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.5,
+   "filter": "SOFT",
+   "card": "makeup_peach_idol.jpg"
+  },
+  {
+   "id": "STRAWBERRY",
+   "category": "IDOL",
+   "title": "Strawberry",
+   "lip": "#E84060",
+   "blush": "#F890A0",
+   "shadow": "#F0A0B0",
+   "shadowAmt": 0.45,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.5,
+   "filter": "BLUSH",
+   "card": "makeup_strawberry.jpg"
+  },
+  {
+   "id": "CRYSTAL",
+   "category": "IDOL",
+   "title": "Crystal",
+   "lip": "#E08898",
+   "blush": "#F0B8C0",
+   "shadow": "#E8E0F0",
+   "shadowAmt": 0.55,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.5,
+   "filter": "GLOW",
+   "card": "makeup_crystal.jpg"
+  },
+  {
+   "id": "PUPPY_EYE",
+   "category": "IDOL",
+   "title": "Puppy Eye",
+   "lip": "#D07870",
+   "blush": "#F0A898",
+   "shadow": "#C09080",
+   "shadowAmt": 0.5,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.5,
+   "filter": "SOFT",
+   "card": "makeup_puppy_eye.jpg"
+  },
+  {
+   "id": "CHERRY_IDOL",
+   "category": "IDOL",
+   "title": "Cherry Idol",
+   "lip": "#C02040",
+   "blush": "#F09098",
+   "shadow": "#E0A0A0",
+   "shadowAmt": 0.35,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.5,
+   "filter": "CLEAR",
+   "card": "makeup_cherry_idol.jpg"
+  },
+  {
+   "id": "SAKURA",
+   "category": "IDOL",
+   "title": "Sakura",
+   "lip": "#F098B0",
+   "blush": "#F8C0D0",
+   "shadow": "#F8D0E0",
+   "shadowAmt": 0.45,
+   "liner": 0.2,
+   "brow": 0.2,
+   "lash": 0.4,
+   "filter": "PEARL",
+   "card": "makeup_sakura.jpg"
+  },
+  {
+   "id": "LILAC",
+   "category": "IDOL",
+   "title": "Lilac",
+   "lip": "#B87A9A",
+   "blush": "#E8A8C0",
+   "shadow": "#B090D0",
+   "shadowAmt": 0.55,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.5,
+   "filter": "PEARL",
+   "card": "makeup_lilac.jpg"
+  },
+  {
+   "id": "APRICOT",
+   "category": "IDOL",
+   "title": "Apricot",
+   "lip": "#F08060",
+   "blush": "#F8B088",
+   "shadow": "#F8C090",
+   "shadowAmt": 0.45,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.4,
+   "filter": "HONEY",
+   "card": "makeup_apricot.jpg"
+  },
+  {
+   "id": "GLASS_SKIN",
+   "category": "IDOL",
+   "title": "Glass Skin",
+   "lip": "#E89090",
+   "blush": "#F0B8B0",
+   "shadow": "#F0E0D8",
+   "shadowAmt": 0.3,
+   "liner": 0.2,
+   "brow": 0.2,
+   "lash": 0.3,
+   "filter": "GLOW",
+   "card": "makeup_glass_skin.jpg"
+  },
+  {
+   "id": "LATTE_GIRL",
+   "category": "INS",
+   "title": "Latte Girl",
+   "lip": "#B07A68",
+   "blush": "#D8A088",
+   "shadow": "#B08870",
+   "shadowAmt": 0.5,
+   "liner": 0.4,
+   "brow": 0.4,
+   "lash": 0.4,
+   "filter": "LATTE",
+   "card": "makeup_latte_girl.jpg"
+  },
+  {
+   "id": "CLEAN_GIRL",
+   "category": "INS",
+   "title": "Clean Girl",
+   "lip": "#D09088",
+   "blush": "#F0B0A0",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.2,
+   "brow": 0.5,
+   "lash": 0.3,
+   "filter": "NATURAL",
+   "card": "makeup_clean_girl.jpg"
+  },
+  {
+   "id": "SOFT_GLAM",
+   "category": "INS",
+   "title": "Soft Glam",
+   "lip": "#C08078",
+   "blush": "#E0A090",
+   "shadow": "#B08070",
+   "shadowAmt": 0.6,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.6,
+   "filter": "SOFT",
+   "card": "makeup_soft_glam.jpg"
+  },
+  {
+   "id": "FOX_EYE",
+   "category": "INS",
+   "title": "Fox Eye",
+   "lip": "#B87068",
+   "blush": "#E0A090",
+   "shadow": "#A07060",
+   "shadowAmt": 0.55,
+   "liner": 0.8,
+   "brow": 0.5,
+   "lash": 0.6,
+   "filter": "CLEAR",
+   "card": "makeup_fox_eye.jpg"
+  },
+  {
+   "id": "SUNSET_LID",
+   "category": "INS",
+   "title": "Sunset Lid",
+   "lip": "#D06858",
+   "blush": "#F09878",
+   "shadow": "#E08050",
+   "shadowAmt": 0.65,
+   "liner": 0.4,
+   "brow": 0.3,
+   "lash": 0.5,
+   "filter": "SUNSET",
+   "card": "makeup_sunset_lid.jpg"
+  },
+  {
+   "id": "BRONZED",
+   "category": "INS",
+   "title": "Bronzed",
+   "lip": "#A06850",
+   "blush": "#D08860",
+   "shadow": "#A07040",
+   "shadowAmt": 0.55,
+   "liner": 0.4,
+   "brow": 0.4,
+   "lash": 0.4,
+   "filter": "AMBER",
+   "card": "makeup_bronzed.jpg"
+  },
+  {
+   "id": "DEWY_CORAL",
+   "category": "INS",
+   "title": "Dewy Coral",
+   "lip": "#F06A5A",
+   "blush": "#F7A486",
+   "shadow": "#F0A890",
+   "shadowAmt": 0.35,
+   "liner": 0.3,
+   "brow": 0.2,
+   "lash": 0.3,
+   "filter": "FRESH",
+   "card": "makeup_dewy_coral.jpg"
+  },
+  {
+   "id": "NUDE_GLOSS",
+   "category": "INS",
+   "title": "Nude Gloss",
+   "lip": "#C89488",
+   "blush": "#E0B0A0",
+   "shadow": "#C0A090",
+   "shadowAmt": 0.35,
+   "liner": 0.3,
+   "brow": 0.3,
+   "lash": 0.3,
+   "filter": "NATURAL",
+   "card": "makeup_nude_gloss.jpg"
+  },
+  {
+   "id": "TERRACOTTA",
+   "category": "INS",
+   "title": "Terracotta",
+   "lip": "#B05840",
+   "blush": "#D88868",
+   "shadow": "#B06848",
+   "shadowAmt": 0.55,
+   "liner": 0.4,
+   "brow": 0.4,
+   "lash": 0.4,
+   "filter": "WARM",
+   "card": "makeup_terracotta.jpg"
+  },
+  {
+   "id": "PINK_LATTE",
+   "category": "INS",
+   "title": "Pink Latte",
+   "lip": "#C88080",
+   "blush": "#E8A8A8",
+   "shadow": "#C8A0A0",
+   "shadowAmt": 0.45,
+   "liner": 0.3,
+   "brow": 0.3,
+   "lash": 0.4,
+   "filter": "SOFT",
+   "card": "makeup_pink_latte.jpg"
+  },
+  {
+   "id": "COPPER",
+   "category": "INS",
+   "title": "Copper",
+   "lip": "#A05040",
+   "blush": "#D08060",
+   "shadow": "#B06030",
+   "shadowAmt": 0.65,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.5,
+   "filter": "AMBER",
+   "card": "makeup_copper.jpg"
+  },
+  {
+   "id": "MOCHA_GLOW",
+   "category": "INS",
+   "title": "Mocha Glow",
+   "lip": "#8A5848",
+   "blush": "#C08870",
+   "shadow": "#8A6050",
+   "shadowAmt": 0.5,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.5,
+   "filter": "LATTE",
+   "card": "makeup_mocha_glow.jpg"
+  },
+  {
+   "id": "M_CLEAN",
+   "category": "MALE",
+   "title": "Clean",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.3,
+   "lash": 0.0,
+   "filter": "URBAN",
+   "card": "makeup_m_clean.jpg"
+  },
+  {
+   "id": "M_DEFINED",
+   "category": "MALE",
+   "title": "Defined",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.15,
+   "brow": 0.6,
+   "lash": 0.0,
+   "filter": "BRONZE",
+   "card": "makeup_m_defined.jpg"
+  },
+  {
+   "id": "M_FRESH",
+   "category": "MALE",
+   "title": "Fresh",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.2,
+   "lash": 0.0,
+   "filter": "CLEAR",
+   "card": "makeup_m_fresh.jpg"
+  },
+  {
+   "id": "M_MATTE",
+   "category": "MALE",
+   "title": "Matte",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.4,
+   "lash": 0.0,
+   "filter": "CHARCOAL",
+   "card": "makeup_m_matte.jpg"
+  },
+  {
+   "id": "M_IDOL",
+   "category": "MALE",
+   "title": "Idol Boy",
+   "lip": "#C08880",
+   "blush": "#000000",
+   "shadow": "#A09090",
+   "shadowAmt": 0.2,
+   "liner": 0.2,
+   "brow": 0.4,
+   "lash": 0.1,
+   "filter": "PEARL",
+   "card": "makeup_m_idol.jpg"
+  },
+  {
+   "id": "M_GENT",
+   "category": "MALE",
+   "title": "Gentleman",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.5,
+   "lash": 0.0,
+   "filter": "BRONZE",
+   "card": "makeup_m_gent.jpg"
+  },
+  {
+   "id": "M_SPORT",
+   "category": "MALE",
+   "title": "Sport",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.3,
+   "lash": 0.0,
+   "filter": "URBAN",
+   "card": "makeup_m_sport.jpg"
+  },
+  {
+   "id": "M_NIGHT",
+   "category": "MALE",
+   "title": "Night Out",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#605858",
+   "shadowAmt": 0.25,
+   "liner": 0.3,
+   "brow": 0.5,
+   "lash": 0.1,
+   "filter": "CHARCOAL",
+   "card": "makeup_m_night.jpg"
+  },
+  {
+   "id": "M_WARM",
+   "category": "MALE",
+   "title": "Warm Tone",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.4,
+   "lash": 0.0,
+   "filter": "AMBER",
+   "card": "makeup_m_warm.jpg"
+  },
+  {
+   "id": "M_COOL",
+   "category": "MALE",
+   "title": "Cool Tone",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.4,
+   "lash": 0.0,
+   "filter": "FUJI_BLUE",
+   "card": "makeup_m_cool.jpg"
+  },
+  {
+   "id": "M_BOYFRIEND",
+   "category": "MALE",
+   "title": "Boyfriend",
+   "lip": "#C89088",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.0,
+   "brow": 0.4,
+   "lash": 0.0,
+   "filter": "SOFT",
+   "card": "makeup_m_boyfriend.jpg"
+  },
+  {
+   "id": "M_SHARP",
+   "category": "MALE",
+   "title": "Sharp",
+   "lip": "#000000",
+   "blush": "#000000",
+   "shadow": "#000000",
+   "shadowAmt": 0.0,
+   "liner": 0.2,
+   "brow": 0.7,
+   "lash": 0.0,
+   "filter": "CLEAR",
+   "card": "makeup_m_sharp.jpg"
+  },
+  {
+   "id": "RUNWAY",
+   "category": "VOGUE",
+   "title": "Runway",
+   "lip": "#9A3040",
+   "blush": "#D08888",
+   "shadow": "#806068",
+   "shadowAmt": 0.6,
+   "liner": 0.7,
+   "brow": 0.5,
+   "lash": 0.6,
+   "filter": "CLEAR",
+   "card": "makeup_runway.jpg"
+  },
+  {
+   "id": "CHILI",
+   "category": "VOGUE",
+   "title": "Chili",
+   "lip": "#B02818",
+   "blush": "#E08070",
+   "shadow": "#B05038",
+   "shadowAmt": 0.5,
+   "liner": 0.6,
+   "brow": 0.5,
+   "lash": 0.5,
+   "filter": "WARM",
+   "card": "makeup_chili.jpg"
+  },
+  {
+   "id": "DIAMOND",
+   "category": "VOGUE",
+   "title": "Diamond",
+   "lip": "#C08088",
+   "blush": "#E0B0B8",
+   "shadow": "#E8E8F0",
+   "shadowAmt": 0.7,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.6,
+   "filter": "GLOW",
+   "card": "makeup_diamond.jpg"
+  },
+  {
+   "id": "DUNE",
+   "category": "VOGUE",
+   "title": "Dune",
+   "lip": "#A87058",
+   "blush": "#D09878",
+   "shadow": "#B89060",
+   "shadowAmt": 0.6,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.5,
+   "filter": "AMBER",
+   "card": "makeup_dune.jpg"
+  },
+  {
+   "id": "WOLF",
+   "category": "VOGUE",
+   "title": "Wolf",
+   "lip": "#905050",
+   "blush": "#C08080",
+   "shadow": "#484048",
+   "shadowAmt": 0.75,
+   "liner": 0.8,
+   "brow": 0.5,
+   "lash": 0.7,
+   "filter": "CHARCOAL",
+   "card": "makeup_wolf.jpg"
+  },
+  {
+   "id": "MIST",
+   "category": "VOGUE",
+   "title": "Mist",
+   "lip": "#B88888",
+   "blush": "#D8B0B0",
+   "shadow": "#A8A8B8",
+   "shadowAmt": 0.55,
+   "liner": 0.4,
+   "brow": 0.3,
+   "lash": 0.5,
+   "filter": "COOL",
+   "card": "makeup_mist.jpg"
+  },
+  {
+   "id": "AUTUMN",
+   "category": "VOGUE",
+   "title": "Autumn",
+   "lip": "#903828",
+   "blush": "#C87858",
+   "shadow": "#986030",
+   "shadowAmt": 0.6,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.5,
+   "filter": "LATTE",
+   "card": "makeup_autumn.jpg"
+  },
+  {
+   "id": "QUARTZ",
+   "category": "VOGUE",
+   "title": "Smoky Quartz",
+   "lip": "#9A6068",
+   "blush": "#C89098",
+   "shadow": "#706068",
+   "shadowAmt": 0.65,
+   "liner": 0.6,
+   "brow": 0.4,
+   "lash": 0.6,
+   "filter": "SOFT",
+   "card": "makeup_quartz.jpg"
+  },
+  {
+   "id": "FLAMENCO",
+   "category": "VOGUE",
+   "title": "Flamenco",
+   "lip": "#C81828",
+   "blush": "#E07070",
+   "shadow": "#803030",
+   "shadowAmt": 0.5,
+   "liner": 0.8,
+   "brow": 0.6,
+   "lash": 0.7,
+   "filter": "VIVID",
+   "card": "makeup_flamenco.jpg"
+  },
+  {
+   "id": "GLIMMER",
+   "category": "VOGUE",
+   "title": "Glimmer",
+   "lip": "#C07880",
+   "blush": "#E0A8A8",
+   "shadow": "#D8C0A0",
+   "shadowAmt": 0.65,
+   "liner": 0.4,
+   "brow": 0.3,
+   "lash": 0.5,
+   "filter": "GLOW",
+   "card": "makeup_glimmer.jpg"
+  },
+  {
+   "id": "MUSE",
+   "category": "VOGUE",
+   "title": "Muse",
+   "lip": "#A86060",
+   "blush": "#D09090",
+   "shadow": "#987070",
+   "shadowAmt": 0.5,
+   "liner": 0.6,
+   "brow": 0.5,
+   "lash": 0.6,
+   "filter": "FILM",
+   "card": "makeup_muse.jpg"
+  },
+  {
+   "id": "COUTURE",
+   "category": "VOGUE",
+   "title": "Couture",
+   "lip": "#701830",
+   "blush": "#C07888",
+   "shadow": "#605058",
+   "shadowAmt": 0.6,
+   "liner": 0.7,
+   "brow": 0.5,
+   "lash": 0.7,
+   "filter": "CHIC",
+   "card": "makeup_couture.jpg"
+  },
+  {
+   "id": "RED",
+   "category": "GORGEOUS",
+   "title": "Classic Red",
+   "lip": "#C21E2E",
+   "blush": "#F08A8A",
+   "shadow": "#A08070",
+   "shadowAmt": 0.25,
+   "liner": 0.8,
+   "brow": 0.5,
+   "lash": 0.5,
+   "filter": "CLEAR",
+   "card": "makeup_red.jpg"
+  },
+  {
+   "id": "BERRY",
+   "category": "GORGEOUS",
+   "title": "Berry Night",
+   "lip": "#7A1F45",
+   "blush": "#D98AA6",
+   "shadow": "#8A5A7A",
+   "shadowAmt": 0.6,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.5,
+   "filter": "BERRY",
+   "card": "makeup_berry.jpg"
+  },
+  {
+   "id": "SMOKY",
+   "category": "GORGEOUS",
+   "title": "Smoky",
+   "lip": "#C08080",
+   "blush": "#D9A0A0",
+   "shadow": "#3A3438",
+   "shadowAmt": 0.8,
+   "liner": 0.8,
+   "brow": 0.5,
+   "lash": 0.8,
+   "filter": "CHARCOAL",
+   "card": "makeup_smoky.jpg"
+  },
+  {
+   "id": "GOLDEN",
+   "category": "GORGEOUS",
+   "title": "Golden",
+   "lip": "#D9806A",
+   "blush": "#F0A880",
+   "shadow": "#C9A050",
+   "shadowAmt": 0.6,
+   "liner": 0.5,
+   "brow": 0.4,
+   "lash": 0.5,
+   "filter": "AMBER",
+   "card": "makeup_golden.jpg"
+  },
+  {
+   "id": "PARTY_QUEEN",
+   "category": "GORGEOUS",
+   "title": "Party Queen",
+   "lip": "#B01848",
+   "blush": "#E88898",
+   "shadow": "#A05078",
+   "shadowAmt": 0.7,
+   "liner": 0.7,
+   "brow": 0.5,
+   "lash": 0.8,
+   "filter": "VIVID",
+   "card": "makeup_party_queen.jpg"
+  },
+  {
+   "id": "BLACK_TEA",
+   "category": "GORGEOUS",
+   "title": "Black Tea",
+   "lip": "#6A3830",
+   "blush": "#B07868",
+   "shadow": "#584038",
+   "shadowAmt": 0.65,
+   "liner": 0.7,
+   "brow": 0.5,
+   "lash": 0.6,
+   "filter": "LATTE",
+   "card": "makeup_black_tea.jpg"
+  },
+  {
+   "id": "HOT_LIGHT",
+   "category": "GORGEOUS",
+   "title": "Hot Light",
+   "lip": "#D03040",
+   "blush": "#F08880",
+   "shadow": "#D07050",
+   "shadowAmt": 0.55,
+   "liner": 0.6,
+   "brow": 0.4,
+   "lash": 0.6,
+   "filter": "SUNSET",
+   "card": "makeup_hot_light.jpg"
+  },
+  {
+   "id": "VELVET",
+   "category": "GORGEOUS",
+   "title": "Velvet",
+   "lip": "#801828",
+   "blush": "#C07070",
+   "shadow": "#704048",
+   "shadowAmt": 0.6,
+   "liner": 0.7,
+   "brow": 0.5,
+   "lash": 0.7,
+   "filter": "CHIC",
+   "card": "makeup_velvet.jpg"
+  },
+  {
+   "id": "BRIDAL",
+   "category": "GORGEOUS",
+   "title": "Bridal",
+   "lip": "#B83848",
+   "blush": "#F09090",
+   "shadow": "#C89060",
+   "shadowAmt": 0.6,
+   "liner": 0.6,
+   "brow": 0.5,
+   "lash": 0.7,
+   "filter": "GLOW",
+   "card": "makeup_bridal.jpg"
+  },
+  {
+   "id": "MIDNIGHT",
+   "category": "GORGEOUS",
+   "title": "Midnight",
+   "lip": "#8A3050",
+   "blush": "#C08098",
+   "shadow": "#283050",
+   "shadowAmt": 0.7,
+   "liner": 0.8,
+   "brow": 0.5,
+   "lash": 0.8,
+   "filter": "FUJI_BLUE",
+   "card": "makeup_midnight.jpg"
+  }
+ ],
+ "backgroundCategories": [
+  {
+   "id": "CUSTOM",
+   "title": "Custom"
+  },
+  {
+   "id": "DAILY",
+   "title": "Daily"
+  },
+  {
+   "id": "BLUR",
+   "title": "Blur"
+  },
+  {
+   "id": "LOVE",
+   "title": "Love"
+  }
+ ],
+ "backgrounds": [
+  {
+   "id": "NONE",
+   "category": null,
+   "title": "Off",
+   "blur": 0.0,
+   "asset": null,
+   "glass": null
+  },
+  {
+   "id": "CUSTOM",
+   "category": "CUSTOM",
+   "title": "Custom",
+   "blur": 0.0,
+   "asset": null,
+   "glass": null
+  },
+  {
+   "id": "BLUR",
+   "category": "BLUR",
+   "title": "Blur",
+   "blur": 1.0,
+   "asset": null,
+   "glass": null
+  },
+  {
+   "id": "BLUR_STRONG",
+   "category": "BLUR",
+   "title": "Strong blur",
+   "blur": 2.2,
+   "asset": null,
+   "glass": null
+  },
+  {
+   "id": "GLASS_PEBBLE",
+   "category": "BLUR",
+   "title": "Pebble",
+   "blur": 1.4,
+   "asset": null,
+   "glass": "bg_glass_pebble.jpg"
+  },
+  {
+   "id": "GLASS_REEDED",
+   "category": "BLUR",
+   "title": "Reeded",
+   "blur": 1.4,
+   "asset": null,
+   "glass": "bg_glass_reeded.jpg"
+  },
+  {
+   "id": "GLASS_GRID",
+   "category": "BLUR",
+   "title": "Grid",
+   "blur": 1.4,
+   "asset": null,
+   "glass": "bg_glass_grid.jpg"
+  },
+  {
+   "id": "GLASS_RAINBOW",
+   "category": "BLUR",
+   "title": "Rainbow",
+   "blur": 1.4,
+   "asset": null,
+   "glass": "bg_glass_rainbow.jpg"
+  },
+  {
+   "id": "RAMADAN_NIGHT",
+   "category": "DAILY",
+   "title": "Ramadan Night",
+   "blur": 0.0,
+   "asset": "bg_ramadan_night.jpg",
+   "glass": null
+  },
+  {
+   "id": "LANTERN_ARCH",
+   "category": "DAILY",
+   "title": "Lantern Arch",
+   "blur": 0.0,
+   "asset": "bg_lantern_arch.jpg",
+   "glass": null
+  },
+  {
+   "id": "MOSQUE_SUNSET",
+   "category": "DAILY",
+   "title": "Mosque Sunset",
+   "blur": 0.0,
+   "asset": "bg_mosque_sunset.jpg",
+   "glass": null
+  },
+  {
+   "id": "LANTERN_ROOM",
+   "category": "DAILY",
+   "title": "Lantern Room",
+   "blur": 0.0,
+   "asset": "bg_lantern_room.jpg",
+   "glass": null
+  },
+  {
+   "id": "SHEER_CURTAINS",
+   "category": "DAILY",
+   "title": "Sheer Curtains",
+   "blur": 0.0,
+   "asset": "bg_sheer_curtains.jpg",
+   "glass": null
+  },
+  {
+   "id": "MINIMAL_LAMP",
+   "category": "DAILY",
+   "title": "Minimal Lamp",
+   "blur": 0.0,
+   "asset": "bg_minimal_lamp.jpg",
+   "glass": null
+  },
+  {
+   "id": "SUNNY_SOFA",
+   "category": "DAILY",
+   "title": "Sunny Sofa",
+   "blur": 0.0,
+   "asset": "bg_sunny_sofa.jpg",
+   "glass": null
+  },
+  {
+   "id": "ARCH_NICHE",
+   "category": "DAILY",
+   "title": "Arch Niche",
+   "blur": 0.0,
+   "asset": "bg_arch_niche.jpg",
+   "glass": null
+  },
+  {
+   "id": "SUNLIT_BEDROOM",
+   "category": "DAILY",
+   "title": "Sunlit Bedroom",
+   "blur": 0.0,
+   "asset": "bg_sunlit_bedroom.jpg",
+   "glass": null
+  },
+  {
+   "id": "READING_CHAIR",
+   "category": "DAILY",
+   "title": "Reading Chair",
+   "blur": 0.0,
+   "asset": "bg_reading_chair.jpg",
+   "glass": null
+  },
+  {
+   "id": "XMAS_LOUNGE",
+   "category": "DAILY",
+   "title": "Xmas Lounge",
+   "blur": 0.0,
+   "asset": "bg_xmas_lounge.jpg",
+   "glass": null
+  },
+  {
+   "id": "EGG_CHAIR",
+   "category": "DAILY",
+   "title": "Egg Chair",
+   "blur": 0.0,
+   "asset": "bg_egg_chair.jpg",
+   "glass": null
+  },
+  {
+   "id": "FAIRY_BEDROOM",
+   "category": "DAILY",
+   "title": "Fairy Bedroom",
+   "blur": 0.0,
+   "asset": "bg_fairy_bedroom.jpg",
+   "glass": null
+  },
+  {
+   "id": "TEDDY_WINDOW",
+   "category": "DAILY",
+   "title": "Teddy Window",
+   "blur": 0.0,
+   "asset": "bg_teddy_window.jpg",
+   "glass": null
+  },
+  {
+   "id": "WHITE_ARMCHAIR",
+   "category": "DAILY",
+   "title": "White Armchair",
+   "blur": 0.0,
+   "asset": "bg_white_armchair.jpg",
+   "glass": null
+  },
+  {
+   "id": "MEETING_ROOM",
+   "category": "DAILY",
+   "title": "Meeting Room",
+   "blur": 0.0,
+   "asset": "bg_meeting_room.jpg",
+   "glass": null
+  },
+  {
+   "id": "GRAND_PIANO",
+   "category": "DAILY",
+   "title": "Grand Piano",
+   "blur": 0.0,
+   "asset": "bg_grand_piano.jpg",
+   "glass": null
+  },
+  {
+   "id": "CREAM_STUDY",
+   "category": "DAILY",
+   "title": "Cream Study",
+   "blur": 0.0,
+   "asset": "bg_cream_study.jpg",
+   "glass": null
+  },
+  {
+   "id": "UPRIGHT_PIANO",
+   "category": "DAILY",
+   "title": "Upright Piano",
+   "blur": 0.0,
+   "asset": "bg_upright_piano.jpg",
+   "glass": null
+  },
+  {
+   "id": "CLASSIC_STUDY",
+   "category": "DAILY",
+   "title": "Classic Study",
+   "blur": 0.0,
+   "asset": "bg_classic_study.jpg",
+   "glass": null
+  },
+  {
+   "id": "LEATHER_LIBRARY",
+   "category": "DAILY",
+   "title": "Leather Library",
+   "blur": 0.0,
+   "asset": "bg_leather_library.jpg",
+   "glass": null
+  },
+  {
+   "id": "CHESTERFIELD",
+   "category": "DAILY",
+   "title": "Chesterfield",
+   "blur": 0.0,
+   "asset": "bg_chesterfield.jpg",
+   "glass": null
+  },
+  {
+   "id": "OFFICE_DESK",
+   "category": "DAILY",
+   "title": "Office Desk",
+   "blur": 0.0,
+   "asset": "bg_office_desk.jpg",
+   "glass": null
+  },
+  {
+   "id": "ROOFTOP_CITY",
+   "category": "DAILY",
+   "title": "Rooftop City",
+   "blur": 0.0,
+   "asset": "bg_rooftop_city.jpg",
+   "glass": null
+  },
+  {
+   "id": "LIVING_ROOM",
+   "category": "DAILY",
+   "title": "Living Room",
+   "blur": 0.0,
+   "asset": "bg_living_room.jpg",
+   "glass": null
+  },
+  {
+   "id": "BEDROOM",
+   "category": "DAILY",
+   "title": "Bedroom",
+   "blur": 0.0,
+   "asset": "bg_bedroom.jpg",
+   "glass": null
+  },
+  {
+   "id": "CAFE",
+   "category": "DAILY",
+   "title": "Cafe",
+   "blur": 0.0,
+   "asset": "bg_cafe.jpg",
+   "glass": null
+  },
+  {
+   "id": "LIBRARY",
+   "category": "DAILY",
+   "title": "Library",
+   "blur": 0.0,
+   "asset": "bg_library.jpg",
+   "glass": null
+  },
+  {
+   "id": "BEACH",
+   "category": "DAILY",
+   "title": "Beach",
+   "blur": 0.0,
+   "asset": "bg_beach.jpg",
+   "glass": null
+  },
+  {
+   "id": "GARDEN",
+   "category": "DAILY",
+   "title": "Garden",
+   "blur": 0.0,
+   "asset": "bg_garden.jpg",
+   "glass": null
+  },
+  {
+   "id": "NIGHT_CITY",
+   "category": "DAILY",
+   "title": "Night City",
+   "blur": 0.0,
+   "asset": "bg_night_city.jpg",
+   "glass": null
+  },
+  {
+   "id": "CANDLE_DINNER",
+   "category": "LOVE",
+   "title": "Candle Dinner",
+   "blur": 0.0,
+   "asset": "bg_candle_dinner.jpg",
+   "glass": null
+  },
+  {
+   "id": "PINK_SALON",
+   "category": "LOVE",
+   "title": "Pink Salon",
+   "blur": 0.0,
+   "asset": "bg_pink_salon.jpg",
+   "glass": null
+  },
+  {
+   "id": "TEDDY_LOVE",
+   "category": "LOVE",
+   "title": "Teddy Love",
+   "blur": 0.0,
+   "asset": "bg_teddy_love.jpg",
+   "glass": null
+  },
+  {
+   "id": "ROSE_MANTEL",
+   "category": "LOVE",
+   "title": "Rose Mantel",
+   "blur": 0.0,
+   "asset": "bg_rose_mantel.jpg",
+   "glass": null
+  },
+  {
+   "id": "BALCONY_HEARTS",
+   "category": "LOVE",
+   "title": "Balcony Hearts",
+   "blur": 0.0,
+   "asset": "bg_balcony_hearts.jpg",
+   "glass": null
+  },
+  {
+   "id": "PARIS_DINNER",
+   "category": "LOVE",
+   "title": "Paris Dinner",
+   "blur": 0.0,
+   "asset": "bg_paris_dinner.jpg",
+   "glass": null
+  },
+  {
+   "id": "PETAL_SOFA",
+   "category": "LOVE",
+   "title": "Petal Sofa",
+   "blur": 0.0,
+   "asset": "bg_petal_sofa.jpg",
+   "glass": null
+  },
+  {
+   "id": "DREAMY_CLOUDS",
+   "category": "LOVE",
+   "title": "Dreamy Clouds",
+   "blur": 0.0,
+   "asset": "bg_dreamy_clouds.jpg",
+   "glass": null
+  },
+  {
+   "id": "PINK_ROSES",
+   "category": "LOVE",
+   "title": "Pink Roses",
+   "blur": 0.0,
+   "asset": "bg_pink_roses.jpg",
+   "glass": null
+  },
+  {
+   "id": "SPARKLE_HEARTS",
+   "category": "LOVE",
+   "title": "Sparkle Hearts",
+   "blur": 0.0,
+   "asset": "bg_sparkle_hearts.jpg",
+   "glass": null
+  },
+  {
+   "id": "BALLOON_HEARTS",
+   "category": "LOVE",
+   "title": "Balloon Hearts",
+   "blur": 0.0,
+   "asset": "bg_balloon_hearts.jpg",
+   "glass": null
+  },
+  {
+   "id": "ROSE_GARDEN",
+   "category": "LOVE",
+   "title": "Rose Garden",
+   "blur": 0.0,
+   "asset": "bg_rose_garden.jpg",
+   "glass": null
+  },
+  {
+   "id": "ROSES",
+   "category": "LOVE",
+   "title": "Roses",
+   "blur": 0.0,
+   "asset": "bg_roses.jpg",
+   "glass": null
+  }
+ ],
+ "maskCategories": [
+  "Hot",
+  "Accessory",
+  "Cute",
+  "Simple",
+  "Love",
+  "Novel",
+  "Festival",
+  "Men",
+  "Buddy"
+ ],
+ "masks": [
+  {
+   "id": "kitty",
+   "title": "Kitty",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.7,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_cat_whiskers.png",
+     "at": "NOSE",
+     "w": 2.7,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_kitty.jpg"
+  },
+  {
+   "id": "bunny",
+   "title": "Bunny",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_bunny_ears.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_bunny.jpg"
+  },
+  {
+   "id": "dark_butterfly",
+   "title": "Dark Wings",
+   "categories": [
+    "Hot",
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_black_butterflies.png",
+     "at": "HEAD",
+     "w": 1.6,
+     "dx": 0.9,
+     "dy": 0.5
+    },
+    {
+     "img": "mask_black_butterflies.png",
+     "at": "CHEEK_LEFT",
+     "w": 0.7,
+     "dx": 0,
+     "dy": -0.4
+    }
+   ],
+   "thumb": "thumb_mask_dark_butterfly.jpg"
+  },
+  {
+   "id": "doodle",
+   "title": "Doodle",
+   "categories": [
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_doodle_glasses.png",
+     "at": "EYES",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_doodle.jpg"
+  },
+  {
+   "id": "pink_bunny_glow",
+   "title": "Glow Bunny",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_sparkle_bunny.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_pink_cloud.png",
+     "at": "CHEEKS",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_pink_bunny_glow.jpg"
+  },
+  {
+   "id": "paw_love",
+   "title": "Paw Love",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_paw_print.png",
+     "at": "HEAD",
+     "w": 0.6,
+     "dx": 0.9,
+     "dy": -0.1
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_paw_love.jpg"
+  },
+  {
+   "id": "buddies",
+   "title": "Buddies",
+   "categories": [
+    "Hot",
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_bear_sticker.png",
+     "at": "HEAD",
+     "w": 0.6,
+     "dx": -1.1,
+     "dy": 0.0
+    },
+    {
+     "img": "mask_strawberry.png",
+     "at": "HEAD",
+     "w": 0.5,
+     "dx": 1.15,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_cloud_face.png",
+     "at": "CHEEK_RIGHT",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_buddies.jpg"
+  },
+  {
+   "id": "blossom_doll",
+   "title": "Blossom Doll",
+   "categories": [
+    "Hot",
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_blossom_ornament.png",
+     "at": "HEAD",
+     "w": 1.2,
+     "dx": 1.25,
+     "dy": 1.4
+    },
+    {
+     "img": "mask_pink_bow.png",
+     "at": "HEAD",
+     "w": 1.0,
+     "dx": -1.1,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_blossom_doll.jpg"
+  },
+  {
+   "id": "cyber",
+   "title": "Cyber",
+   "categories": [
+    "Hot",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_cyber_visor.png",
+     "at": "EYES",
+     "w": 2.9,
+     "dx": 0,
+     "dy": -0.05
+    },
+    {
+     "img": "mask_studio_headphones.png",
+     "at": "EYES",
+     "w": 3.9,
+     "dx": 0,
+     "dy": -0.5
+    }
+   ],
+   "thumb": "thumb_mask_cyber.jpg"
+  },
+  {
+   "id": "crown_cat",
+   "title": "Queen Cat",
+   "categories": [
+    "Hot",
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_black_cat_crown.png",
+     "at": "HEAD",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0.25
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_crown_cat.jpg"
+  },
+  {
+   "id": "maid_cat",
+   "title": "Lace Kitty",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_maid_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_white_whiskers.png",
+     "at": "NOSE",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_maid_cat.jpg"
+  },
+  {
+   "id": "heart_hand",
+   "title": "Golden Curls",
+   "categories": [
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_gold_horns.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.1
+    },
+    {
+     "img": "mask_red_hearts.png",
+     "at": "CHEEKS",
+     "w": 0.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_heart_hand.jpg"
+  },
+  {
+   "id": "lace_bows",
+   "title": "Lace Bows",
+   "categories": [
+    "Hot",
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_white_butterflies.png",
+     "at": "HEAD",
+     "w": 1.1,
+     "dx": 1.2,
+     "dy": 0.6
+    },
+    {
+     "img": "mask_white_butterflies.png",
+     "at": "HEAD",
+     "w": 1.1,
+     "dx": -1.2,
+     "dy": 0.6
+    }
+   ],
+   "thumb": "thumb_mask_lace_bows.jpg"
+  },
+  {
+   "id": "heart_rain",
+   "title": "Heart Rain",
+   "categories": [
+    "Hot",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_floating_hearts.png",
+     "at": "HEAD",
+     "w": 2.4,
+     "dx": 0,
+     "dy": -0.3
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_heart_rain.jpg"
+  },
+  {
+   "id": "wolf",
+   "title": "Wolf",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_wolf_ears.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.15
+    }
+   ],
+   "thumb": "thumb_mask_wolf.jpg"
+  },
+  {
+   "id": "devil",
+   "title": "Little Devil",
+   "categories": [
+    "Hot",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_devil_horns.png",
+     "at": "HEAD",
+     "w": 2.8,
+     "dx": 0,
+     "dy": 0.1
+    }
+   ],
+   "thumb": "thumb_mask_devil.jpg"
+  },
+  {
+   "id": "white_wings",
+   "title": "White Wings",
+   "categories": [
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_white_butterflies.png",
+     "at": "HEAD",
+     "w": 1.4,
+     "dx": 1.0,
+     "dy": 0.0
+    },
+    {
+     "img": "mask_white_butterflies.png",
+     "at": "HEAD",
+     "w": 1.0,
+     "dx": -1.15,
+     "dy": 0.6
+    }
+   ],
+   "thumb": "thumb_mask_white_wings.jpg"
+  },
+  {
+   "id": "red_cat",
+   "title": "Red Cat",
+   "categories": [
+    "Hot",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_lace_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_glitter_cat_nose.png",
+     "at": "NOSE",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_red_cat.jpg"
+  },
+  {
+   "id": "studded",
+   "title": "Rock Star",
+   "categories": [
+    "Hot",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_studded_cap.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.7
+    },
+    {
+     "img": "mask_square_glasses.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_studded.jpg"
+  },
+  {
+   "id": "flower_mask",
+   "title": "Petal Mask",
+   "categories": [
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_flower_row.png",
+     "at": "CHEEKS",
+     "w": 0.65,
+     "dx": 0,
+     "dy": 0
+    },
+    {
+     "img": "mask_floating_hearts.png",
+     "at": "HEAD",
+     "w": 1.6,
+     "dx": 0,
+     "dy": -0.3
+    }
+   ],
+   "thumb": "thumb_mask_flower_mask.jpg"
+  },
+  {
+   "id": "kitten_bow",
+   "title": "Bow Kitten",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.7,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_pink_bow.png",
+     "at": "HEAD",
+     "w": 0.9,
+     "dx": 1.0,
+     "dy": 0.0
+    }
+   ],
+   "thumb": "thumb_mask_kitten_bow.jpg"
+  },
+  {
+   "id": "masquerade",
+   "title": "Masquerade",
+   "categories": [
+    "Hot",
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_lace_mask.png",
+     "at": "EYES",
+     "w": 2.7,
+     "dx": 0,
+     "dy": -0.08
+    }
+   ],
+   "thumb": "thumb_mask_masquerade.jpg"
+  },
+  {
+   "id": "mouse_pink",
+   "title": "Sweet Ears",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_dog_ears.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.3
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_mouse_pink.jpg"
+  },
+  {
+   "id": "stars_crown",
+   "title": "Star Girl",
+   "categories": [
+    "Hot",
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_floating_stars.png",
+     "at": "HEAD",
+     "w": 2.4,
+     "dx": 0,
+     "dy": -0.2
+    },
+    {
+     "img": "mask_gold_star.png",
+     "at": "CHEEKS",
+     "w": 0.4,
+     "dx": 0,
+     "dy": -0.1
+    }
+   ],
+   "thumb": "thumb_mask_stars_crown.jpg"
+  },
+  {
+   "id": "demon",
+   "title": "Demon",
+   "categories": [
+    "Hot",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_devil_horns.png",
+     "at": "HEAD",
+     "w": 2.8,
+     "dx": 0,
+     "dy": 0.1
+    }
+   ],
+   "thumb": "thumb_mask_demon.jpg"
+  },
+  {
+   "id": "lamb",
+   "title": "Lamb",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_sheep_ears.png",
+     "at": "HEAD",
+     "w": 3.2,
+     "dx": 0,
+     "dy": 0.25
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_lamb.jpg"
+  },
+  {
+   "id": "blue_ribbon",
+   "title": "Blue Ribbon",
+   "categories": [
+    "Hot",
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_blue_ribbon.png",
+     "at": "HEAD",
+     "w": 1.3,
+     "dx": 0.0,
+     "dy": -0.1
+    }
+   ],
+   "thumb": "thumb_mask_blue_ribbon.jpg"
+  },
+  {
+   "id": "whiskers",
+   "title": "Whiskers",
+   "categories": [
+    "Hot",
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_cat_whiskers.png",
+     "at": "NOSE",
+     "w": 2.7,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_whiskers.jpg"
+  },
+  {
+   "id": "gold_mask",
+   "title": "Venetian",
+   "categories": [
+    "Hot",
+    "Accessory",
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_venetian_mask.png",
+     "at": "EYES",
+     "w": 2.8,
+     "dx": 0,
+     "dy": -0.08
+    }
+   ],
+   "thumb": "thumb_mask_gold_mask.jpg"
+  },
+  {
+   "id": "boss",
+   "title": "Boss",
+   "categories": [
+    "Hot",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_aviators.png",
+     "at": "EYES",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_boss.jpg"
+  },
+  {
+   "id": "heart_pals",
+   "title": "Heart Pals",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_dog_ears.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.3
+    },
+    {
+     "img": "mask_neon_heart.png",
+     "at": "CHEEKS",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_heart_pals.jpg"
+  },
+  {
+   "id": "monkey_king",
+   "title": "Golden Band",
+   "categories": [
+    "Hot",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_crescent_crown.png",
+     "at": "HEAD",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0.25
+    }
+   ],
+   "thumb": "thumb_mask_monkey_king.jpg"
+  },
+  {
+   "id": "panda",
+   "title": "Panda",
+   "categories": [
+    "Hot",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_panda_ears.png",
+     "at": "HEAD",
+     "w": 2.8,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_panda_patches.png",
+     "at": "EYES",
+     "w": 2.2,
+     "dx": 0,
+     "dy": 0.05
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_panda.jpg"
+  },
+  {
+   "id": "devil_fluff",
+   "title": "Fluffy Horns",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_devil_horns.png",
+     "at": "HEAD",
+     "w": 2.8,
+     "dx": 0,
+     "dy": 0.1
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_devil_fluff.jpg"
+  },
+  {
+   "id": "spa",
+   "title": "Spa Day",
+   "categories": [
+    "Accessory",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_spa_headband.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.4
+    }
+   ],
+   "thumb": "thumb_mask_spa.jpg"
+  },
+  {
+   "id": "pink_kitty",
+   "title": "Pink Kitty",
+   "categories": [
+    "Accessory",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.7,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_white_whiskers.png",
+     "at": "NOSE",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_pink_kitty.jpg"
+  },
+  {
+   "id": "bat_wings",
+   "title": "Night Wings",
+   "categories": [
+    "Accessory",
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_black_butterflies.png",
+     "at": "HEAD",
+     "w": 1.5,
+     "dx": 0.0,
+     "dy": -0.1
+    }
+   ],
+   "thumb": "thumb_mask_bat_wings.jpg"
+  },
+  {
+   "id": "lily",
+   "title": "Lily Crown",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_lily_crown.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.35
+    }
+   ],
+   "thumb": "thumb_mask_lily.jpg"
+  },
+  {
+   "id": "headphones",
+   "title": "Headphones",
+   "categories": [
+    "Accessory",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_studio_headphones.png",
+     "at": "EYES",
+     "w": 3.9,
+     "dx": 0,
+     "dy": -0.5
+    }
+   ],
+   "thumb": "thumb_mask_headphones.jpg"
+  },
+  {
+   "id": "emoji_hearts",
+   "title": "Heart Eyes",
+   "categories": [
+    "Accessory",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_red_heart_glasses.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    },
+    {
+     "img": "mask_floating_hearts.png",
+     "at": "HEAD",
+     "w": 2.0,
+     "dx": 0,
+     "dy": -0.3
+    }
+   ],
+   "thumb": "thumb_mask_emoji_hearts.jpg"
+  },
+  {
+   "id": "galaxy",
+   "title": "Galaxy",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_floating_stars.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": -0.1
+    },
+    {
+     "img": "mask_glitter_stars.png",
+     "at": "CHEEKS",
+     "w": 0.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_galaxy.jpg"
+  },
+  {
+   "id": "peacock",
+   "title": "Peacock",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_peacock_headpiece.png",
+     "at": "HEAD",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0.4
+    },
+    {
+     "img": "mask_face_gems.png",
+     "at": "CHEEKS",
+     "w": 0.8,
+     "dx": 0,
+     "dy": -0.35
+    }
+   ],
+   "thumb": "thumb_mask_peacock.jpg"
+  },
+  {
+   "id": "clips",
+   "title": "Hair Clips",
+   "categories": [
+    "Accessory",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_pastel_clips.png",
+     "at": "HEAD",
+     "w": 1.8,
+     "dx": -0.4,
+     "dy": 0.4
+    }
+   ],
+   "thumb": "thumb_mask_clips.jpg"
+  },
+  {
+   "id": "cloud_cheeks",
+   "title": "Cloud Cheeks",
+   "categories": [
+    "Accessory",
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_cloud.png",
+     "at": "CHEEKS",
+     "w": 0.55,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_cloud_cheeks.jpg"
+  },
+  {
+   "id": "star_cat",
+   "title": "Star Cat",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_lace_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_white_whiskers.png",
+     "at": "NOSE",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_star_cat.jpg"
+  },
+  {
+   "id": "black_lace_ears",
+   "title": "Lace Ears",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_lace_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_black_lace_ears.jpg"
+  },
+  {
+   "id": "blue_butterflies",
+   "title": "Blue Crown",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_blue_flower_crown.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.35
+    }
+   ],
+   "thumb": "thumb_mask_blue_butterflies.jpg"
+  },
+  {
+   "id": "sparkle_nose",
+   "title": "Sparkle Nose",
+   "categories": [
+    "Accessory",
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_glitter_cat_nose.png",
+     "at": "NOSE",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_glitter_stars.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_sparkle_nose.jpg"
+  },
+  {
+   "id": "autumn",
+   "title": "Autumn",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_dahlia_crown.png",
+     "at": "HEAD",
+     "w": 3.2,
+     "dx": 0,
+     "dy": 0.4
+    }
+   ],
+   "thumb": "thumb_mask_autumn.jpg"
+  },
+  {
+   "id": "blossom",
+   "title": "Blossom",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_blossom_ornament.png",
+     "at": "HEAD",
+     "w": 1.2,
+     "dx": 1.25,
+     "dy": 1.4
+    },
+    {
+     "img": "mask_blossom_ornament.png",
+     "at": "HEAD",
+     "w": 1.2,
+     "dx": -1.25,
+     "dy": 1.4
+    }
+   ],
+   "thumb": "thumb_mask_blossom.jpg"
+  },
+  {
+   "id": "mirror_butterfly",
+   "title": "Mirror Wings",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_butterfly_mask.png",
+     "at": "EYES",
+     "w": 2.9,
+     "dx": 0,
+     "dy": -0.08
+    }
+   ],
+   "thumb": "thumb_mask_mirror_butterfly.jpg"
+  },
+  {
+   "id": "bear_cap",
+   "title": "Bear Cap",
+   "categories": [
+    "Accessory",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_bear_beret.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.65
+    },
+    {
+     "img": "mask_bear_snout.png",
+     "at": "NOSE",
+     "w": 0.9,
+     "dx": 0,
+     "dy": 0.05
+    }
+   ],
+   "thumb": "thumb_mask_bear_cap.jpg"
+  },
+  {
+   "id": "sunday",
+   "title": "Sunday",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_cat_shades.png",
+     "at": "EYES",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0
+    },
+    {
+     "img": "mask_donut.png",
+     "at": "CHEEK_RIGHT",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_sunday.jpg"
+  },
+  {
+   "id": "candy",
+   "title": "Candy",
+   "categories": [
+    "Accessory",
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_candy_dots.png",
+     "at": "CHEEKS",
+     "w": 0.7,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_candy.jpg"
+  },
+  {
+   "id": "red_bow",
+   "title": "Red Bow",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_red_velvet_bow.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.15
+    },
+    {
+     "img": "mask_blush_lines.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_red_bow.jpg"
+  },
+  {
+   "id": "mermaid",
+   "title": "Mermaid",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_heart_crown.png",
+     "at": "HEAD",
+     "w": 2.3,
+     "dx": 0,
+     "dy": 0.25
+    },
+    {
+     "img": "mask_crystal_tear.png",
+     "at": "CHEEKS",
+     "w": 0.3,
+     "dx": 0,
+     "dy": -0.3
+    }
+   ],
+   "thumb": "thumb_mask_mermaid.jpg"
+  },
+  {
+   "id": "glam",
+   "title": "Glam",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_face_gems.png",
+     "at": "CHEEKS",
+     "w": 0.8,
+     "dx": 0,
+     "dy": -0.35
+    },
+    {
+     "img": "mask_glitter_stars.png",
+     "at": "CHEEKS",
+     "w": 0.6,
+     "dx": 0,
+     "dy": 0.1
+    }
+   ],
+   "thumb": "thumb_mask_glam.jpg"
+  },
+  {
+   "id": "star_halo",
+   "title": "Star Halo",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_floating_stars.png",
+     "at": "HEAD",
+     "w": 2.4,
+     "dx": 0,
+     "dy": -0.2
+    }
+   ],
+   "thumb": "thumb_mask_star_halo.jpg"
+  },
+  {
+   "id": "doll",
+   "title": "Doll",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_bow.png",
+     "at": "HEAD",
+     "w": 1.7,
+     "dx": 0,
+     "dy": 0.15
+    },
+    {
+     "img": "mask_blush_lines.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_doll.jpg"
+  },
+  {
+   "id": "carrot",
+   "title": "Carrot",
+   "categories": [
+    "Accessory",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_carrot_clips.png",
+     "at": "HEAD",
+     "w": 1.2,
+     "dx": -1.0,
+     "dy": 0.5
+    }
+   ],
+   "thumb": "thumb_mask_carrot.jpg"
+  },
+  {
+   "id": "emoji_pals",
+   "title": "Emoji Pals",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_cloud_face.png",
+     "at": "HEAD",
+     "w": 0.7,
+     "dx": -1.1,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_cloud_face.png",
+     "at": "HEAD",
+     "w": 0.6,
+     "dx": 1.15,
+     "dy": 0.4
+    }
+   ],
+   "thumb": "thumb_mask_emoji_pals.jpg"
+  },
+  {
+   "id": "dahlia",
+   "title": "Dahlia",
+   "categories": [
+    "Accessory",
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_dahlia_crown.png",
+     "at": "HEAD",
+     "w": 3.2,
+     "dx": 0,
+     "dy": 0.4
+    }
+   ],
+   "thumb": "thumb_mask_dahlia.jpg"
+  },
+  {
+   "id": "heart_dots",
+   "title": "Heart Dots",
+   "categories": [
+    "Accessory",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_red_hearts.png",
+     "at": "CHEEKS",
+     "w": 0.65,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_heart_dots.jpg"
+  },
+  {
+   "id": "tiger",
+   "title": "Tiger",
+   "categories": [
+    "Accessory",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_tiger_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_leopard_nose.png",
+     "at": "NOSE",
+     "w": 1.6,
+     "dx": 0,
+     "dy": 0.15
+    }
+   ],
+   "thumb": "thumb_mask_tiger.jpg"
+  },
+  {
+   "id": "princess",
+   "title": "Princess",
+   "categories": [
+    "Accessory",
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_tiara.png",
+     "at": "HEAD",
+     "w": 2.0,
+     "dx": 0,
+     "dy": 0.1
+    },
+    {
+     "img": "mask_face_gems.png",
+     "at": "CHEEKS",
+     "w": 0.8,
+     "dx": 0,
+     "dy": -0.35
+    }
+   ],
+   "thumb": "thumb_mask_princess.jpg"
+  },
+  {
+   "id": "heart_shades",
+   "title": "Heart Shades",
+   "categories": [
+    "Accessory",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_heart_shades.png",
+     "at": "EYES",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_heart_shades.jpg"
+  },
+  {
+   "id": "rose_crown",
+   "title": "Rose Crown",
+   "categories": [
+    "Accessory",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_rose_crown.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.3
+    }
+   ],
+   "thumb": "thumb_mask_rose_crown.jpg"
+  },
+  {
+   "id": "daisy",
+   "title": "Daisy Crown",
+   "categories": [
+    "Accessory",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_daisy_crown.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.3
+    }
+   ],
+   "thumb": "thumb_mask_daisy.jpg"
+  },
+  {
+   "id": "nerd",
+   "title": "Nerd",
+   "categories": [
+    "Accessory",
+    "Men",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_nerd_glasses.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_nerd.jpg"
+  },
+  {
+   "id": "cool",
+   "title": "Cool Shades",
+   "categories": [
+    "Accessory",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_aviators.png",
+     "at": "EYES",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_cool.jpg"
+  },
+  {
+   "id": "steampunk",
+   "title": "Steampunk",
+   "categories": [
+    "Accessory",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_steampunk_goggles.png",
+     "at": "EYES",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_steampunk.jpg"
+  },
+  {
+   "id": "crystal_mask",
+   "title": "Crystal Mask",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_crystal_lace_mask.png",
+     "at": "EYES",
+     "w": 2.8,
+     "dx": 0,
+     "dy": -0.08
+    }
+   ],
+   "thumb": "thumb_mask_crystal_mask.jpg"
+  },
+  {
+   "id": "feather",
+   "title": "Feather Mask",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_feather_mask.png",
+     "at": "EYES",
+     "w": 2.9,
+     "dx": 0,
+     "dy": -0.08
+    }
+   ],
+   "thumb": "thumb_mask_feather.jpg"
+  },
+  {
+   "id": "star_shades",
+   "title": "Star Shades",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_star_shades.png",
+     "at": "EYES",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_star_shades.jpg"
+  },
+  {
+   "id": "gold_rimless",
+   "title": "Gold Frames",
+   "categories": [
+    "Accessory",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_gold_rimless.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_gold_rimless.jpg"
+  },
+  {
+   "id": "orange_shades",
+   "title": "Sunset Shades",
+   "categories": [
+    "Accessory"
+   ],
+   "layers": [
+    {
+     "img": "mask_orange_round_shades.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_orange_shades.jpg"
+  },
+  {
+   "id": "pixel",
+   "title": "Pixel Shades",
+   "categories": [
+    "Accessory",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_pixel_shades.png",
+     "at": "EYES",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_pixel.jpg"
+  },
+  {
+   "id": "retro_3d",
+   "title": "Retro 3D",
+   "categories": [
+    "Accessory",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_glasses_3d.png",
+     "at": "EYES",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_retro_3d.jpg"
+  },
+  {
+   "id": "ski",
+   "title": "Ski Goggles",
+   "categories": [
+    "Accessory",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_ski_goggles.png",
+     "at": "EYES",
+     "w": 2.8,
+     "dx": 0,
+     "dy": -0.05
+    }
+   ],
+   "thumb": "thumb_mask_ski.jpg"
+  },
+  {
+   "id": "bunny_bow",
+   "title": "Bunny Bow",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_bunny_bow_ears.png",
+     "at": "HEAD",
+     "w": 2.7,
+     "dx": 0,
+     "dy": 0.5
+    },
+    {
+     "img": "mask_bunny_nose_teeth.png",
+     "at": "NOSE",
+     "w": 1.6,
+     "dx": 0,
+     "dy": 0.3
+    }
+   ],
+   "thumb": "thumb_mask_bunny_bow.jpg"
+  },
+  {
+   "id": "puppy",
+   "title": "Puppy",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_puppy_ears.png",
+     "at": "HEAD",
+     "w": 3.4,
+     "dx": 0,
+     "dy": 0.9
+    },
+    {
+     "img": "mask_puppy_nose_tongue.png",
+     "at": "NOSE",
+     "w": 1.0,
+     "dx": 0,
+     "dy": 0.25
+    }
+   ],
+   "thumb": "thumb_mask_puppy.jpg"
+  },
+  {
+   "id": "pink_puppy",
+   "title": "Pink Puppy",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_dog_ears.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.3
+    },
+    {
+     "img": "mask_dog_nose.png",
+     "at": "NOSE",
+     "w": 0.75,
+     "dx": 0,
+     "dy": 0.05
+    }
+   ],
+   "thumb": "thumb_mask_pink_puppy.jpg"
+  },
+  {
+   "id": "leopard",
+   "title": "Leopard",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_leopard_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_leopard_nose.png",
+     "at": "NOSE",
+     "w": 1.6,
+     "dx": 0,
+     "dy": 0.15
+    }
+   ],
+   "thumb": "thumb_mask_leopard.jpg"
+  },
+  {
+   "id": "red_bunny",
+   "title": "Red Bunny",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_red_bunny_ears.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_red_bunny.jpg"
+  },
+  {
+   "id": "holo_cat",
+   "title": "Holo Cat",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_holo_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.8,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_white_whiskers.png",
+     "at": "NOSE",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_holo_cat.jpg"
+  },
+  {
+   "id": "cloud_band",
+   "title": "Cloud Band",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_cloud_headband.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.3
+    },
+    {
+     "img": "mask_pink_cloud.png",
+     "at": "CHEEKS",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_cloud_band.jpg"
+  },
+  {
+   "id": "neon_cat",
+   "title": "Neon Cat",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_neon_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.8,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_white_whiskers.png",
+     "at": "NOSE",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_neon_cat.jpg"
+  },
+  {
+   "id": "teddy",
+   "title": "Teddy",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_bear_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.15
+    },
+    {
+     "img": "mask_bear_snout.png",
+     "at": "NOSE",
+     "w": 0.9,
+     "dx": 0,
+     "dy": 0.05
+    }
+   ],
+   "thumb": "thumb_mask_teddy.jpg"
+  },
+  {
+   "id": "fox",
+   "title": "Fox",
+   "categories": [
+    "Cute",
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_fox_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.15
+    },
+    {
+     "img": "mask_cat_whiskers.png",
+     "at": "NOSE",
+     "w": 2.7,
+     "dx": 0,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_fox.jpg"
+  },
+  {
+   "id": "piggy",
+   "title": "Piggy",
+   "categories": [
+    "Cute",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_pig_nose.png",
+     "at": "NOSE",
+     "w": 0.8,
+     "dx": 0,
+     "dy": 0.05
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_piggy.jpg"
+  },
+  {
+   "id": "capy",
+   "title": "Capy",
+   "categories": [
+    "Cute",
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_capybara.png",
+     "at": "HEAD",
+     "w": 1.1,
+     "dx": 0.0,
+     "dy": -0.1
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_capy.jpg"
+  },
+  {
+   "id": "duckling",
+   "title": "Duckling",
+   "categories": [
+    "Cute",
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_duck.png",
+     "at": "HEAD",
+     "w": 0.9,
+     "dx": 0.2,
+     "dy": 0.0
+    }
+   ],
+   "thumb": "thumb_mask_duckling.jpg"
+  },
+  {
+   "id": "plush",
+   "title": "Plush",
+   "categories": [
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_teddy_plush.png",
+     "at": "CHEEK_LEFT",
+     "w": 0.8,
+     "dx": 0,
+     "dy": 0.6
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_plush.jpg"
+  },
+  {
+   "id": "tongue",
+   "title": "Silly Tongue",
+   "categories": [
+    "Cute",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_tongue.png",
+     "at": "MOUTH",
+     "w": 0.6,
+     "dx": 0,
+     "dy": 0.35
+    }
+   ],
+   "thumb": "thumb_mask_tongue.jpg"
+  },
+  {
+   "id": "rainbow_cheeks",
+   "title": "Rainbow",
+   "categories": [
+    "Cute",
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_rainbow_sticker.png",
+     "at": "CHEEKS",
+     "w": 0.55,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_rainbow_cheeks.jpg"
+  },
+  {
+   "id": "strawberry",
+   "title": "Berry",
+   "categories": [
+    "Cute",
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_strawberry.png",
+     "at": "CHEEK_RIGHT",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEK_LEFT",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_strawberry.jpg"
+  },
+  {
+   "id": "blush",
+   "title": "Blush",
+   "categories": [
+    "Simple",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.55,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_blush.jpg"
+  },
+  {
+   "id": "stars",
+   "title": "Stars",
+   "categories": [
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_gold_star.png",
+     "at": "CHEEKS",
+     "w": 0.45,
+     "dx": 0,
+     "dy": -0.1
+    }
+   ],
+   "thumb": "thumb_mask_stars.jpg"
+  },
+  {
+   "id": "freckles",
+   "title": "Freckles",
+   "categories": [
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_freckles.png",
+     "at": "NOSE",
+     "w": 2.2,
+     "dx": 0,
+     "dy": -0.25
+    }
+   ],
+   "thumb": "thumb_mask_freckles.jpg"
+  },
+  {
+   "id": "gold_freckles",
+   "title": "Gold Freckles",
+   "categories": [
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_gold_freckles.png",
+     "at": "NOSE",
+     "w": 2.2,
+     "dx": 0,
+     "dy": -0.2
+    }
+   ],
+   "thumb": "thumb_mask_gold_freckles.jpg"
+  },
+  {
+   "id": "gems",
+   "title": "Gems",
+   "categories": [
+    "Simple",
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_face_gems.png",
+     "at": "CHEEKS",
+     "w": 0.8,
+     "dx": 0,
+     "dy": -0.35
+    }
+   ],
+   "thumb": "thumb_mask_gems.jpg"
+  },
+  {
+   "id": "kiss",
+   "title": "Kiss",
+   "categories": [
+    "Simple",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_kiss_mark.png",
+     "at": "CHEEK_RIGHT",
+     "w": 0.65,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_kiss.jpg"
+  },
+  {
+   "id": "pearl_hearts",
+   "title": "Pearl Hearts",
+   "categories": [
+    "Simple",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_pearl_heart.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_pearl_hearts.jpg"
+  },
+  {
+   "id": "neon_hearts",
+   "title": "Neon Hearts",
+   "categories": [
+    "Simple",
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_neon_heart.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_neon_hearts.jpg"
+  },
+  {
+   "id": "donuts",
+   "title": "Donuts",
+   "categories": [
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_donut.png",
+     "at": "CHEEKS",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_donuts.jpg"
+  },
+  {
+   "id": "tears",
+   "title": "Crystal Tear",
+   "categories": [
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_crystal_tear.png",
+     "at": "CHEEK_RIGHT",
+     "w": 0.3,
+     "dx": 0,
+     "dy": -0.35
+    }
+   ],
+   "thumb": "thumb_mask_tears.jpg"
+  },
+  {
+   "id": "flowers",
+   "title": "Flowers",
+   "categories": [
+    "Simple"
+   ],
+   "layers": [
+    {
+     "img": "mask_flower_row.png",
+     "at": "CHEEKS",
+     "w": 0.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_flowers.jpg"
+  },
+  {
+   "id": "blush_lines",
+   "title": "Anime Blush",
+   "categories": [
+    "Simple",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_blush_lines.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_blush_lines.jpg"
+  },
+  {
+   "id": "paint_rainbow",
+   "title": "Paint Stroke",
+   "categories": [
+    "Simple",
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_rainbow_paint.png",
+     "at": "CHEEK_LEFT",
+     "w": 0.8,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_paint_rainbow.jpg"
+  },
+  {
+   "id": "blue_stars",
+   "title": "Blue Stars",
+   "categories": [
+    "Simple",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_blue_star_paint.png",
+     "at": "CHEEKS",
+     "w": 0.7,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_blue_stars.jpg"
+  },
+  {
+   "id": "paws",
+   "title": "Paws",
+   "categories": [
+    "Simple",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_paw_print.png",
+     "at": "CHEEKS",
+     "w": 0.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_paws.jpg"
+  },
+  {
+   "id": "cupid",
+   "title": "Cupid",
+   "categories": [
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_cupid_wings.png",
+     "at": "HEAD",
+     "w": 1.6,
+     "dx": 0.0,
+     "dy": -0.3
+    },
+    {
+     "img": "mask_heart_arrow.png",
+     "at": "CHEEK_RIGHT",
+     "w": 0.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_cupid.jpg"
+  },
+  {
+   "id": "love_letter",
+   "title": "Love Letter",
+   "categories": [
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_love_letter.png",
+     "at": "HEAD",
+     "w": 0.8,
+     "dx": 1.1,
+     "dy": 0.0
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_love_letter.jpg"
+  },
+  {
+   "id": "heart_crown",
+   "title": "Heart Crown",
+   "categories": [
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_heart_crown.png",
+     "at": "HEAD",
+     "w": 2.3,
+     "dx": 0,
+     "dy": 0.25
+    },
+    {
+     "img": "mask_red_hearts.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_heart_crown.jpg"
+  },
+  {
+   "id": "rose_petals",
+   "title": "Rose Petals",
+   "categories": [
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_rose_petals.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": -0.1
+    },
+    {
+     "img": "mask_rose_petals.png",
+     "at": "CHEEKS",
+     "w": 0.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_rose_petals.jpg"
+  },
+  {
+   "id": "donut_shades",
+   "title": "Donut Eyes",
+   "categories": [
+    "Love",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_donut_shades.png",
+     "at": "EYES",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_donut_shades.jpg"
+  },
+  {
+   "id": "lip_prints",
+   "title": "Kisses",
+   "categories": [
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_lip_stickers.png",
+     "at": "CHEEKS",
+     "w": 0.7,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_lip_prints.jpg"
+  },
+  {
+   "id": "teddy_heart",
+   "title": "Teddy Heart",
+   "categories": [
+    "Love",
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_teddy_heart.png",
+     "at": "HEAD",
+     "w": 1.0,
+     "dx": 1.0,
+     "dy": 0.1
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_teddy_heart.jpg"
+  },
+  {
+   "id": "fluffy_hearts",
+   "title": "Fluffy Love",
+   "categories": [
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_fluffy_heart_mask.png",
+     "at": "EYES",
+     "w": 2.7,
+     "dx": 0,
+     "dy": -0.4
+    },
+    {
+     "img": "mask_floating_hearts.png",
+     "at": "HEAD",
+     "w": 2.2,
+     "dx": 0,
+     "dy": -0.3
+    }
+   ],
+   "thumb": "thumb_mask_fluffy_hearts.jpg"
+  },
+  {
+   "id": "strawberry_crown",
+   "title": "Berry Crown",
+   "categories": [
+    "Love",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_strawberry_crown.png",
+     "at": "HEAD",
+     "w": 2.8,
+     "dx": 0,
+     "dy": 0.3
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_strawberry_crown.jpg"
+  },
+  {
+   "id": "love_shades",
+   "title": "Love Struck",
+   "categories": [
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_heart_shades.png",
+     "at": "EYES",
+     "w": 2.5,
+     "dx": 0,
+     "dy": 0
+    },
+    {
+     "img": "mask_kiss_mark.png",
+     "at": "CHEEK_LEFT",
+     "w": 0.6,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_love_shades.jpg"
+  },
+  {
+   "id": "red_heart_glasses",
+   "title": "Heart Glasses",
+   "categories": [
+    "Love"
+   ],
+   "layers": [
+    {
+     "img": "mask_red_heart_glasses.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    },
+    {
+     "img": "mask_red_hearts.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_red_heart_glasses.jpg"
+  },
+  {
+   "id": "angry",
+   "title": "Angry",
+   "categories": [
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_anger_mark.png",
+     "at": "FOREHEAD",
+     "w": 0.6,
+     "dx": 0.8,
+     "dy": -0.2
+    }
+   ],
+   "thumb": "thumb_mask_angry.jpg"
+  },
+  {
+   "id": "tired",
+   "title": "Tired",
+   "categories": [
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_eye_bags.png",
+     "at": "EYES",
+     "w": 2.0,
+     "dx": 0,
+     "dy": 0.35
+    }
+   ],
+   "thumb": "thumb_mask_tired.jpg"
+  },
+  {
+   "id": "sweat",
+   "title": "Awkward",
+   "categories": [
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_sweat_drop.png",
+     "at": "FOREHEAD",
+     "w": 0.4,
+     "dx": -0.9,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_sweat.jpg"
+  },
+  {
+   "id": "dizzy",
+   "title": "Dizzy",
+   "categories": [
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_dizzy_eyes.png",
+     "at": "EYES",
+     "w": 2.0,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_dizzy.jpg"
+  },
+  {
+   "id": "rainy",
+   "title": "Rainy Day",
+   "categories": [
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_rain_cloud.png",
+     "at": "HEAD",
+     "w": 2.0,
+     "dx": 0,
+     "dy": -0.5
+    }
+   ],
+   "thumb": "thumb_mask_rainy.jpg"
+  },
+  {
+   "id": "clown",
+   "title": "Clown",
+   "categories": [
+    "Novel",
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_clown_nose.png",
+     "at": "NOSE",
+     "w": 0.65,
+     "dx": 0,
+     "dy": 0.05
+    }
+   ],
+   "thumb": "thumb_mask_clown.jpg"
+  },
+  {
+   "id": "gentleman",
+   "title": "Gentleman",
+   "categories": [
+    "Novel",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_moustache.png",
+     "at": "MOUTH",
+     "w": 1.5,
+     "dx": 0,
+     "dy": -0.4
+    },
+    {
+     "img": "mask_nerd_glasses.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_gentleman.jpg"
+  },
+  {
+   "id": "puppy_nose",
+   "title": "Puppy Nose",
+   "categories": [
+    "Novel",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_dog_nose.png",
+     "at": "NOSE",
+     "w": 0.8,
+     "dx": 0,
+     "dy": 0.05
+    }
+   ],
+   "thumb": "thumb_mask_puppy_nose.jpg"
+  },
+  {
+   "id": "shark",
+   "title": "Shark",
+   "categories": [
+    "Novel",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_shark_helmet.png",
+     "at": "HEAD",
+     "w": 3.6,
+     "dx": 0,
+     "dy": 0.9
+    }
+   ],
+   "thumb": "thumb_mask_shark.jpg"
+  },
+  {
+   "id": "chef",
+   "title": "Chef",
+   "categories": [
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_chef_hat.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.5
+    },
+    {
+     "img": "mask_moustache.png",
+     "at": "MOUTH",
+     "w": 1.5,
+     "dx": 0,
+     "dy": -0.4
+    }
+   ],
+   "thumb": "thumb_mask_chef.jpg"
+  },
+  {
+   "id": "grad",
+   "title": "Graduate",
+   "categories": [
+    "Novel",
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_grad_cap.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.5
+    }
+   ],
+   "thumb": "thumb_mask_grad.jpg"
+  },
+  {
+   "id": "pirate",
+   "title": "Pirate",
+   "categories": [
+    "Novel",
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_pirate_hat.png",
+     "at": "HEAD",
+     "w": 3.4,
+     "dx": 0,
+     "dy": 0.55
+    }
+   ],
+   "thumb": "thumb_mask_pirate.jpg"
+  },
+  {
+   "id": "santa",
+   "title": "Santa",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_santa_hat.png",
+     "at": "HEAD",
+     "w": 3.2,
+     "dx": 0,
+     "dy": 0.6
+    },
+    {
+     "img": "mask_blush_lines.png",
+     "at": "CHEEKS",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_santa.jpg"
+  },
+  {
+   "id": "reindeer",
+   "title": "Reindeer",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_antlers.png",
+     "at": "HEAD",
+     "w": 3.2,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_reindeer_glasses.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_reindeer.jpg"
+  },
+  {
+   "id": "holly",
+   "title": "Holly",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_holly_bow.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.15
+    }
+   ],
+   "thumb": "thumb_mask_holly.jpg"
+  },
+  {
+   "id": "xmas_bunny",
+   "title": "Festive Bunny",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_festive_bunny.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_xmas_bunny.jpg"
+  },
+  {
+   "id": "pumpkin",
+   "title": "Pumpkin",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_pumpkin_band.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_cute_ghost.png",
+     "at": "CHEEKS",
+     "w": 0.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_pumpkin.jpg"
+  },
+  {
+   "id": "skeleton",
+   "title": "Skeleton",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_skeleton_clip.png",
+     "at": "HEAD",
+     "w": 1.3,
+     "dx": 1.1,
+     "dy": 0.8
+    }
+   ],
+   "thumb": "thumb_mask_skeleton.jpg"
+  },
+  {
+   "id": "ghost_cat",
+   "title": "Ghost Cat",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_ghost_cat_ears.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_cute_ghost.png",
+     "at": "CHEEKS",
+     "w": 0.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_ghost_cat.jpg"
+  },
+  {
+   "id": "easter",
+   "title": "Easter",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_easter_crown.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.35
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_easter.jpg"
+  },
+  {
+   "id": "sunhat",
+   "title": "Summer",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_straw_hat.png",
+     "at": "HEAD",
+     "w": 3.5,
+     "dx": 0,
+     "dy": 0.95
+    }
+   ],
+   "thumb": "thumb_mask_sunhat.jpg"
+  },
+  {
+   "id": "eid",
+   "title": "Eid Moon",
+   "categories": [
+    "Festival",
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_crescent_crown.png",
+     "at": "HEAD",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0.25
+    },
+    {
+     "img": "mask_gold_lantern.png",
+     "at": "HEAD",
+     "w": 0.7,
+     "dx": 1.25,
+     "dy": 0.2
+    }
+   ],
+   "thumb": "thumb_mask_eid.jpg"
+  },
+  {
+   "id": "lantern",
+   "title": "Lantern",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_gold_lantern.png",
+     "at": "HEAD",
+     "w": 0.8,
+     "dx": -1.2,
+     "dy": 0.0
+    },
+    {
+     "img": "mask_gold_lantern.png",
+     "at": "HEAD",
+     "w": 0.6,
+     "dx": 1.25,
+     "dy": 0.4
+    }
+   ],
+   "thumb": "thumb_mask_lantern.jpg"
+  },
+  {
+   "id": "lion",
+   "title": "Lion Dance",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_lion_hat.png",
+     "at": "HEAD",
+     "w": 3.4,
+     "dx": 0,
+     "dy": 0.6
+    }
+   ],
+   "thumb": "thumb_mask_lion.jpg"
+  },
+  {
+   "id": "rainbow_arch",
+   "title": "Rainbow",
+   "categories": [
+    "Festival",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_rainbow_arch.png",
+     "at": "HEAD",
+     "w": 2.8,
+     "dx": 0,
+     "dy": -0.2
+    }
+   ],
+   "thumb": "thumb_mask_rainbow_arch.jpg"
+  },
+  {
+   "id": "candy_cane",
+   "title": "Candy Cane",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_candy_cane.png",
+     "at": "HEAD",
+     "w": 0.7,
+     "dx": 1.2,
+     "dy": 0.3
+    },
+    {
+     "img": "mask_red_hearts.png",
+     "at": "CHEEKS",
+     "w": 0.45,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_candy_cane.jpg"
+  },
+  {
+   "id": "snow",
+   "title": "Snow Queen",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_snowflake_crown.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.2
+    },
+    {
+     "img": "mask_glitter_stars.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_snow.jpg"
+  },
+  {
+   "id": "witch",
+   "title": "Witch",
+   "categories": [
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_witch_hat.png",
+     "at": "HEAD",
+     "w": 3.6,
+     "dx": 0,
+     "dy": 0.3
+    },
+    {
+     "img": "mask_gold_star.png",
+     "at": "CHEEK_LEFT",
+     "w": 0.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_witch.jpg"
+  },
+  {
+   "id": "angel",
+   "title": "Angel",
+   "categories": [
+    "Festival",
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_halo.png",
+     "at": "HEAD",
+     "w": 2.2,
+     "dx": 0,
+     "dy": -0.5
+    },
+    {
+     "img": "mask_gold_star.png",
+     "at": "CHEEKS",
+     "w": 0.42,
+     "dx": 0,
+     "dy": -0.1
+    }
+   ],
+   "thumb": "thumb_mask_angel.jpg"
+  },
+  {
+   "id": "bull",
+   "title": "Bull",
+   "categories": [
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_gold_horns.png",
+     "at": "HEAD",
+     "w": 2.9,
+     "dx": 0,
+     "dy": 0.1
+    }
+   ],
+   "thumb": "thumb_mask_bull.jpg"
+  },
+  {
+   "id": "aviator",
+   "title": "Aviator",
+   "categories": [
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_aviator_cap.png",
+     "at": "HEAD",
+     "w": 3.1,
+     "dx": 0,
+     "dy": 0.5
+    }
+   ],
+   "thumb": "thumb_mask_aviator.jpg"
+  },
+  {
+   "id": "keffiyeh",
+   "title": "Keffiyeh",
+   "categories": [
+    "Men",
+    "Festival"
+   ],
+   "layers": [
+    {
+     "img": "mask_keffiyeh.png",
+     "at": "HEAD",
+     "w": 3.6,
+     "dx": 0,
+     "dy": 1.2
+    }
+   ],
+   "thumb": "thumb_mask_keffiyeh.jpg"
+  },
+  {
+   "id": "cowboy",
+   "title": "Cowboy",
+   "categories": [
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_cowboy_hat.png",
+     "at": "HEAD",
+     "w": 3.6,
+     "dx": 0,
+     "dy": 0.55
+    }
+   ],
+   "thumb": "thumb_mask_cowboy.jpg"
+  },
+  {
+   "id": "red_cap",
+   "title": "Cap",
+   "categories": [
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_red_cap.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.7
+    }
+   ],
+   "thumb": "thumb_mask_red_cap.jpg"
+  },
+  {
+   "id": "viking",
+   "title": "Viking",
+   "categories": [
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_viking_helmet.png",
+     "at": "HEAD",
+     "w": 3.3,
+     "dx": 0,
+     "dy": 0.6
+    }
+   ],
+   "thumb": "thumb_mask_viking.jpg"
+  },
+  {
+   "id": "beanie",
+   "title": "Beanie",
+   "categories": [
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_beanie.png",
+     "at": "HEAD",
+     "w": 3.0,
+     "dx": 0,
+     "dy": 0.7
+    }
+   ],
+   "thumb": "thumb_mask_beanie.jpg"
+  },
+  {
+   "id": "bucket",
+   "title": "Bucket Hat",
+   "categories": [
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_bucket_hat.png",
+     "at": "HEAD",
+     "w": 3.1,
+     "dx": 0,
+     "dy": 0.65
+    }
+   ],
+   "thumb": "thumb_mask_bucket.jpg"
+  },
+  {
+   "id": "top_hat",
+   "title": "Top Hat",
+   "categories": [
+    "Men",
+    "Novel"
+   ],
+   "layers": [
+    {
+     "img": "mask_top_hat.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": 0.4
+    },
+    {
+     "img": "mask_moustache.png",
+     "at": "MOUTH",
+     "w": 1.5,
+     "dx": 0,
+     "dy": -0.4
+    }
+   ],
+   "thumb": "thumb_mask_top_hat.jpg"
+  },
+  {
+   "id": "royal",
+   "title": "Royal",
+   "categories": [
+    "Men",
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_royal_crown.png",
+     "at": "HEAD",
+     "w": 1.9,
+     "dx": 0,
+     "dy": 0.05
+    }
+   ],
+   "thumb": "thumb_mask_royal.jpg"
+  },
+  {
+   "id": "gamer",
+   "title": "Gamer",
+   "categories": [
+    "Men",
+    "Hot"
+   ],
+   "layers": [
+    {
+     "img": "mask_gamer_headset.png",
+     "at": "EYES",
+     "w": 3.6,
+     "dx": 0,
+     "dy": -0.55
+    }
+   ],
+   "thumb": "thumb_mask_gamer.jpg"
+  },
+  {
+   "id": "square",
+   "title": "Specs",
+   "categories": [
+    "Men"
+   ],
+   "layers": [
+    {
+     "img": "mask_square_glasses.png",
+     "at": "EYES",
+     "w": 2.4,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_square.jpg"
+  },
+  {
+   "id": "ghost_buddy",
+   "title": "Boo",
+   "categories": [
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_ghost_buddy.png",
+     "at": "HEAD",
+     "w": 1.1,
+     "dx": 0.0,
+     "dy": -0.2
+    }
+   ],
+   "thumb": "thumb_mask_ghost_buddy.jpg"
+  },
+  {
+   "id": "cloud_wings",
+   "title": "Cloud Wings",
+   "categories": [
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_cloud_wings.png",
+     "at": "HEAD",
+     "w": 2.6,
+     "dx": 0,
+     "dy": -0.2
+    },
+    {
+     "img": "mask_heart_blush.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_cloud_wings.jpg"
+  },
+  {
+   "id": "alien",
+   "title": "Alien",
+   "categories": [
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_alien_buddy.png",
+     "at": "HEAD",
+     "w": 0.9,
+     "dx": 1.1,
+     "dy": 0.1
+    }
+   ],
+   "thumb": "thumb_mask_alien.jpg"
+  },
+  {
+   "id": "kitty_buddy",
+   "title": "Kitty Pal",
+   "categories": [
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_pink_cat_buddy.png",
+     "at": "HEAD",
+     "w": 0.9,
+     "dx": -1.1,
+     "dy": 0.1
+    }
+   ],
+   "thumb": "thumb_mask_kitty_buddy.jpg"
+  },
+  {
+   "id": "dino",
+   "title": "Dino",
+   "categories": [
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_dino_buddy.png",
+     "at": "HEAD",
+     "w": 1.0,
+     "dx": 1.05,
+     "dy": 0.1
+    }
+   ],
+   "thumb": "thumb_mask_dino.jpg"
+  },
+  {
+   "id": "unicorn",
+   "title": "Unicorn",
+   "categories": [
+    "Buddy",
+    "Cute"
+   ],
+   "layers": [
+    {
+     "img": "mask_unicorn.png",
+     "at": "HEAD",
+     "w": 1.0,
+     "dx": 0.0,
+     "dy": -0.1
+    },
+    {
+     "img": "mask_glitter_stars.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_unicorn.jpg"
+  },
+  {
+   "id": "cloud_pals",
+   "title": "Cloud Pals",
+   "categories": [
+    "Buddy"
+   ],
+   "layers": [
+    {
+     "img": "mask_cloud_face.png",
+     "at": "CHEEKS",
+     "w": 0.5,
+     "dx": 0,
+     "dy": 0
+    }
+   ],
+   "thumb": "thumb_mask_cloud_pals.jpg"
+  }
+ ]
+}

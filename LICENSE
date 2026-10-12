@@ -1,0 +1,16 @@
+Looma Beauty Camera Free License
+Copyright (c) 2026 AppLooma LLC. All rights reserved.
+
+Looma Beauty Camera ("the SDK") is provided free of charge for use in
+applications built on AppLooma RTC. You may include the SDK in your
+applications and distribute it as part of them, commercially or not.
+
+You may not decompile, reverse-engineer, extract or modify the SDK or the
+pictures it downloads, use it apart from AppLooma RTC, or redistribute it as a
+standalone library.
+
+THE SDK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. IN NO EVENT SHALL
+APPLOOMA LLC BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM
+THE USE OF THE SDK.
+
+Full terms: https://docs.applooma.dev/legal/beauty-camera-license
