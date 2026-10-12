@@ -32,7 +32,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
 
     private let beauty: AppBeauty
     private let tabsShown: [Tab]
-    private var tab: Tab
+    private var currentTab: Tab
     private var item: AppBeautyItem = .smooth
     private var group: AppBeautyGroup = .skin
     private var complexionPage = false
@@ -67,7 +67,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
     private init(beauty: AppBeauty, magic: Bool) {
         self.beauty = beauty
         tabsShown = magic ? [.mask, .background] : [.presets, .beauty, .makeup, .filter]
-        tab = tabsShown[0]
+        currentTab = tabsShown[0]
         favs = Set(UserDefaults.standard.stringArray(forKey: AppBeautyPanel.favKey) ?? [])
         super.init(nibName: nil, bundle: nil)
     }
@@ -118,7 +118,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
             let b = UIButton(type: .system)
             b.setTitle(t == .presets ? "\u{2726} \(t.rawValue)" : t.rawValue, for: .normal)
             b.titleLabel?.font = .systemFont(ofSize: 15, weight: .semibold)
-            b.addAction(UIAction { [weak self] _ in self?.tab = t; self?.complexionPage = false; self?.render() }, for: .touchUpInside)
+            b.addAction(UIAction { [weak self] _ in self?.currentTab = t; self?.complexionPage = false; self?.render() }, for: .touchUpInside)
             tabButtons[t] = b
             tabsRow.addArrangedSubview(b)
         }
@@ -170,16 +170,16 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
 
     private func render() {
         for (t, b) in tabButtons {
-            b.setTitleColor(t == tab ? (t == .presets ? accent : .white) : dim, for: .normal)
+            b.setTitleColor(t == currentTab ? (t == .presets ? accent : .white) : dim, for: .normal)
         }
-        let keepX = tab == lastTab ? rowScroll.contentOffset.x : 0
-        lastTab = tab
+        let keepX = currentTab == lastTab ? rowScroll.contentOffset.x : 0
+        lastTab = currentTab
         header.arrangedSubviews.forEach { $0.removeFromSuperview() }
         row.arrangedSubviews.forEach { $0.removeFromSuperview() }
         catButtons.removeAll(); catStart.removeAll()
-        headerScroll.isHidden = tab == .presets
+        headerScroll.isHidden = currentTab == .presets
         let o = beauty.options
-        switch tab {
+        switch currentTab {
         case .presets:
             row.addArrangedSubview(offItem { [weak self] in self?.beauty.options = AppBeautyOptions(); self?.render() })
             for p in AppBeautyPreset.all {
@@ -366,7 +366,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
     private func renderSlider(_ o: AppBeautyOptions) {
         var v: Float = -2
         var bipolar = false
-        switch tab {
+        switch currentTab {
         case .beauty:
             let it: AppBeautyItem = complexionPage ? .complexion : item
             if o.enabled { bipolar = it.bipolar; v = o.values[it] ?? 0 }
@@ -379,7 +379,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
         slider.maximumValue = 1
         if v > -1.5 { slider.value = v }
         valueLabel.text = "\(Int((slider.value * 100).rounded()))"
-        let showFilter2 = tab == .makeup && v > -1.5 && o.filter != .none
+        let showFilter2 = currentTab == .makeup && v > -1.5 && o.filter != .none
         slider2Row.isHidden = !showFilter2
         if showFilter2 { slider2.value = o.filterIntensity }
     }
@@ -388,7 +388,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
         let v = slider.value
         valueLabel.text = "\(Int((v * 100).rounded()))"
         var o = beauty.options
-        switch tab {
+        switch currentTab {
         case .beauty: o = o.with(complexionPage ? .complexion : item, abs(v) < 0.005 ? 0 : v)
         case .makeup: o.makeupIntensity = v
         case .filter: o.filterIntensity = v
@@ -433,7 +433,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
     }
 
     private func currentCat() -> Int {
-        switch tab {
+        switch currentTab {
         case .makeup: return makeupCat
         case .background: return bgCat
         case .mask: return maskCat
@@ -442,7 +442,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
     }
 
     private func setCat(_ i: Int) {
-        switch tab {
+        switch currentTab {
         case .makeup: makeupCat = i
         case .background: bgCat = i
         case .mask: maskCat = i
