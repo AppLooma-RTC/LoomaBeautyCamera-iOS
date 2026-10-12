@@ -121,7 +121,7 @@ final class FaceTracker {
         var browA = points(lm.leftEyebrow), browB = points(lm.rightEyebrow)
         if !browA.isEmpty, !browB.isEmpty, centre(browA).x > centre(browB).x { swap(&browA, &browB) }
         let le = centre(eyeA), re = centre(eyeB)
-        let ed = simd_len(re - le)
+        let ed = simd_length(re - le)
         if ed < 2 { return }
         let u = (re - le) / ed                      // across the face
         let v = SIMD2<Float>(-u.y, u.x)             // down the face
@@ -141,7 +141,8 @@ final class FaceTracker {
         let arcN = 12
         for k in 1..<arcN {
             let t = Float.pi * Float(k) / Float(arcN)
-            ovalUp.append(c + d * cos(t) - v * (b * sin(t)))
+            let ct: Float = cosf(t), st: Float = sinf(t)
+            ovalUp.append(c + d * ct - v * (b * st))
         }
         let apex = c - v * b
 
