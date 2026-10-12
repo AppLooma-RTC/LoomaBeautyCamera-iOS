@@ -18,7 +18,7 @@ In Xcode: File > Add Package Dependencies, enter
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AppLooma-RTC/LoomaBeautyCamera-iOS.git", from: "0.2.0"),
+    .package(url: "https://github.com/AppLooma-RTC/LoomaBeautyCamera-iOS.git", from: "0.2.1"),
 ],
 targets: [
     .target(name: "MyApp", dependencies: [
@@ -58,7 +58,7 @@ The core is also a pod, `LoomaBeautyCore` (`LoomaBeautyCore.podspec` at the
 root of the repository):
 
 ```ruby
-pod 'LoomaBeautyCore', :git => 'https://github.com/AppLooma-RTC/LoomaBeautyCamera-iOS.git', :tag => '0.2.0'
+pod 'LoomaBeautyCore', :git => 'https://github.com/AppLooma-RTC/LoomaBeautyCamera-iOS.git', :tag => '0.2.1'
 ```
 
 then `import LoomaBeautyCore`. The RTC glue is a one-line extension

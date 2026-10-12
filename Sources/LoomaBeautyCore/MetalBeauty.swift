@@ -956,9 +956,12 @@ final class MetalBeauty {
         return pb
     }
 
-    /// A quarter-size BGRA copy of `s` (buffer orientation) for the detectors and the panel.
+    /// A reduced BGRA copy of `s` (buffer orientation) for the detectors and the panel.
+    /// Divided by 1 to 4 so the short side stays at 180 px (or the full frame if
+    /// smaller); a fixed quarter left small cameras (480x270) too small for Vision.
     private func small(_ cb: MTLCommandBuffer, _ s: MTLTexture, _ keep: inout [CVMetalTexture]) -> CVPixelBuffer? {
-        let w = Swift.max(s.width / 4, 2), h = Swift.max(s.height / 4, 2)
+        let div = Swift.min(Swift.max(Swift.min(s.width, s.height) / 180, 1), 4)
+        let w = Swift.max(s.width / div, 2), h = Swift.max(s.height / div, 2)
         if smallPool == nil || smallKey != (w, h) { smallPool = MetalBeauty.makePool(w, h, min: 3); smallKey = (w, h) }
         guard let pool = smallPool else { return nil }
         var pb: CVPixelBuffer?

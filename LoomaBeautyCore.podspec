@@ -5,7 +5,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LoomaBeautyCore'
   s.module_name      = 'LoomaBeautyCore'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Looma Beauty Camera: free real-time beauty, make-up, filters, masks and backgrounds for iOS.'
   s.description      = <<-DESC
     GPU (Metal) skin smoothing, whitening, face reshape, make-up, colour filters,

@@ -17,7 +17,7 @@ import UIKit
 /// Change `options` at any time; the next frame uses them. With AppLooma RTC,
 /// remove it with `engine.setVideoProcessor(nil)`.
 public final class AppBeauty {
-    public static let version = "0.2.0"
+    public static let version = "0.2.1"
     /// On from the start: the Smart Beauty preset.
     public static var defaultOptions: AppBeautyOptions { AppBeautyPreset.smart.options }
     /// No effect at all.
@@ -70,11 +70,22 @@ public final class AppBeauty {
     }
 
     /// The face mask that follows the head (Magic), or nil. See `AppMasks`.
-    /// Its pictures are downloaded on first use.
+    /// Its pictures are downloaded first; the switch happens once they are
+    /// ready (the previous mask stays until then, and is kept if it fails).
     public var mask: AppMask? {
         get { gpu?.mask }
-        set { gpu?.mask = newValue; if let m = newValue, !BeautyAssets.isReady(m) { BeautyAssets.fetch(m) { _ in } } }
+        set {
+            lock.lock(); wantedMask = newValue?.id; lock.unlock()
+            guard let m = newValue, !BeautyAssets.isReady(m) else { gpu?.mask = newValue; return }
+            BeautyAssets.fetch(m) { [weak self] ok in
+                guard let self else { return }
+                self.lock.lock(); let still = self.wantedMask == m.id; self.lock.unlock()
+                if ok && still { self.gpu?.mask = m }
+            }
+        }
     }
+    private var wantedMask: String?
+    private var wantedBackground: AppBeautyBackground?
 
     /// Sets the mask by its catalogue id (nil or an unknown id removes it).
     public func setMask(id: String?) { mask = id.flatMap { AppMasks.byId($0) } }
@@ -83,7 +94,15 @@ public final class AppBeauty {
     /// later; on iOS 14 the setting is kept but nothing is drawn.
     public var background: AppBeautyBackground {
         get { gpu?.background ?? .none }
-        set { gpu?.background = newValue; if !BeautyAssets.isReady(newValue) { BeautyAssets.fetch(newValue) { _ in } } }
+        set {
+            lock.lock(); wantedBackground = newValue; lock.unlock()
+            guard !BeautyAssets.isReady(newValue) else { gpu?.background = newValue; return }
+            BeautyAssets.fetch(newValue) { [weak self] ok in
+                guard let self else { return }
+                self.lock.lock(); let still = self.wantedBackground == newValue; self.lock.unlock()
+                if ok && still { self.gpu?.background = newValue }
+            }
+        }
     }
 
     /// The picture for `AppBeautyBackground.custom`, upright. The Magic panel's
