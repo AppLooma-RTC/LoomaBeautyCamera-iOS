@@ -54,7 +54,7 @@ let out = beauty.process(pixelBuffer, rotation: 90, timestamp: ptsNanos)
 
 ### CocoaPods
 
-The core is also a pod, `LoomaBeautyCore` (`LoomaBeautyCamera.podspec` at the
+The core is also a pod, `LoomaBeautyCore` (`LoomaBeautyCore.podspec` at the
 root of the repository):
 
 ```ruby
