@@ -395,7 +395,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
         default: return
         }
         beauty.options = o
-        if tab == .beauty {
+        if currentTab == .beauty {
             NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(rerender), object: nil)
             perform(#selector(rerender), with: nil, afterDelay: 0.25)
         }
@@ -452,7 +452,7 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
 
     private func pickCategory(_ i: Int) {
         let fromFav = currentCat() == 0
-        if tab != .background && (i == 0 || fromFav) {
+        if currentTab != .background && (i == 0 || fromFav) {
             // Favourites is its own list; leaving it rebuilds the full row.
             setCat(i)
             lastTab = nil
@@ -504,11 +504,11 @@ public final class AppBeautyPanel: UIViewController, UIScrollViewDelegate, PHPic
         guard scrollView === rowScroll, scrollView.isTracking || scrollView.isDecelerating,
               CACurrentMediaTime() - followLock > 0.6 else { return }
         let x = scrollView.contentOffset.x + 80
-        if tab == .beauty && !complexionPage {
+        if currentTab == .beauty && !complexionPage {
             var g = AppBeautyGroup.skin
             for cand in AppBeautyGroup.allCases { if let v = sectionStart[cand], v.frame.minX <= x { g = cand } }
             if g != group { group = g; markGroup() }
-        } else if tab != .presets && currentCat() != 0 {
+        } else if currentTab != .presets && currentCat() != 0 {
             let passed = catStart.filter { $0.value.frame.minX <= x }
             guard let c = passed.max(by: { $0.value.frame.minX < $1.value.frame.minX })?.key else { return }
             if c != currentCat() { setCat(c); markCat(c) }
